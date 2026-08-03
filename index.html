@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>西安购房候选楼盘对比与地图</title>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#e4e9f2;--blue:#2563eb;--green:#16a34a;--orange:#ea580c;--purple:#7c3aed;--red:#dc2626}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;line-height:1.65}
+.hero{background:linear-gradient(135deg,#0f172a,#1d4ed8);color:#fff;padding:52px 24px 42px}.wrap{max-width:1500px;margin:auto}.hero h1{margin:0 0 10px;font-size:34px}.hero p{margin:4px 0;color:#dbeafe}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.metric{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:15px}.metric b{display:block;font-size:25px}.content{padding:25px 20px 60px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:18px auto;box-shadow:0 5px 18px rgba(15,23,42,.04)}h2{font-size:24px;margin:0 0 14px}h3{font-size:18px;margin:18px 0 8px}.note{background:#eff6ff;border-left:4px solid var(--blue);padding:12px 16px;border-radius:8px;color:#344054}.warning{background:#fff7ed;border-left-color:var(--orange)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.btn{border:1px solid var(--line);background:#fff;padding:8px 13px;border-radius:999px;cursor:pointer}.btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:1280px;font-size:13px}th{position:sticky;top:0;background:#f8fafc;z-index:2;text-align:left;padding:11px 9px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:11px 9px;border-bottom:1px solid #eef1f5;vertical-align:top}tr:hover{background:#f8fbff}.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600}.new{background:#ede9fe;color:#6d28d9}.recent{background:#dcfce7;color:#166534}.old{background:#ffedd5;color:#9a3412}.region{background:#e0f2fe;color:#075985}.score{font-weight:800;color:#1d4ed8;font-size:16px}.favorite-btn{border:1px solid #f59e0b;background:#fff;color:#b45309;padding:5px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;font-weight:700}.favorite-btn.active{background:#fef3c7;color:#92400e}.favorite-panel{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.favorite-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.favorite-chip{border:1px solid #f59e0b;background:#fffbeb;color:#92400e;border-radius:999px;padding:5px 10px;cursor:pointer}.favorite-empty{color:var(--muted);font-size:13px}.project-link{color:#1d4ed8;text-decoration:none;font-weight:800;cursor:pointer}.project-link:hover{text-decoration:underline}.unit-link{color:#475467;text-decoration:none;cursor:pointer}.unit-link:hover{color:#1d4ed8;text-decoration:underline}.map-flash{animation:mapFlash 1.2s ease-out}@keyframes mapFlash{0%{box-shadow:0 0 0 5px rgba(37,99,235,.45)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}.green{color:var(--green);font-weight:700}.yellow{color:#b45309;font-weight:700}.small{font-size:12px;color:var(--muted)}
+#map{height:690px;border-radius:14px;border:1px solid var(--line)}.legend{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:5px}.reference-pin{width:24px;height:24px;background:#0f172a;color:#fff;border:3px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 8px rgba(15,23,42,.45);display:flex;align-items:center;justify-content:center}.reference-pin span{transform:rotate(45deg);font-size:11px;font-weight:800}.footer{color:var(--muted);font-size:12px;text-align:center;padding:18px}
+@media(max-width:800px){.summary{grid-template-columns:1fr 1fr}.hero h1{font-size:27px}.content{padding:14px 9px}.card{padding:15px}#map{height:550px}}
+@media print{.toolbar,.favorite-btn{display:none}.hero{padding:25px;color:#000;background:#fff}.metric{border:1px solid #ccc;color:#000}.card{box-shadow:none;break-inside:avoid}#map{height:500px}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="wrap">
+<h1>西安长期自住型购房候选表</h1>
+<p>目标：有效使用面积85—100㎡为主｜核心预算约160万元｜总价超过210万元不进入排行榜</p>
+<p>区域结构：以西南郊和西郊为主，同时放宽至兴庆路以西的主城区；优先补充土门、大寨路、太白南路及城南近城区项目。高新项目不考察到李家村距离。</p>
+<div class="summary"><div class="metric"><b>30</b>具体户型候选</div><div class="metric"><b>7 / 14 / 9</b>新房 / 次新 / 2016—2020二手</div><div class="metric"><b>76—100㎡</b>扩展有效面积</div><div class="metric"><b>≤210万元</b>硬性总价上限</div></div>
+</div></section>
+<div class="content wrap">
+<section class="card"><h2>使用口径</h2>
+<div class="note"><b>有效使用面积</b>以产权套内为核心，普通阳台、飘窗等赠送空间仅低权重折算；开放露台、设备平台、无法写入合同的赠送面积原则上不计。表内套内及有效面积为初筛估算，最终须以不动产权证、预测/实测绘报告及现场量房为准。</div>
+<p>交通评分：非高新项目只判断能否通过地铁直达李家村、换乘一次或换乘两次，不比较20、30或40分钟的乘车时长；高新项目改看板块内部生活与道路通达性。</p><div class="note warning"><b>最新边界：</b>兴庆路以西均可考虑；兴庆路以东仍原则上不纳入。为增加主城区选项，本版适当放宽面积和预算：有效面积可略低于85㎡或略高于100㎡作为备选，总价仍严格不超过210万元。</div>
+</section>
+
+<section class="card" id="favoritesSection"><h2>我的收藏 <span id="favoriteCount" class="tag old">0</span></h2>
+<div class="favorite-panel"><button class="btn" id="showFavoritesBtn" type="button">仅看收藏</button><button class="btn" id="showAllBtn" type="button">显示全部</button><span class="small">收藏保存在当前浏览器本地；重新打开同一HTML仍会保留。</span></div>
+<div id="favoriteList" class="favorite-list"><span class="favorite-empty">尚未收藏任何房源。</span></div></section>
+
+<section class="card housing" data-group="新房"><h2>一、新房及尾盘（7个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th>预计产权套内</th><th>保守有效面积</th><th>参考总价</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="newRows"></tbody></table></div></section>
+<section class="card housing" data-group="次新"><h2>二、2020年后次新房（14个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>交付</th><th>格局</th><th>预计产权套内</th><th>有效使用面积</th><th>目标成交区间</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="recentRows"></tbody></table></div></section>
+<section class="card housing" data-group="成熟二手"><h2>三、2016—2020年为主的成熟二手房（9个具体户型）</h2><p class="small">本组重点补充2016—2020年交付项目；富力城北区继续按用户实际居住体验排除。</p><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th>预计产权套内</th><th>有效使用面积</th><th>目标成交区间</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="oldRows"></tbody></table></div></section>
+
+<section class="card"><h2>第一轮建议重点查看</h2><ol>
+<li><b>金地西沣公元一期109.53㎡</b>：西南郊，总价和有效面积平衡突出。</li>
+<li><b>融创西安宸院二期121.3㎡</b>：西南郊次新房，空间、房龄和生活成熟度均衡。</li>
+<li><b>中海昆明路九号110㎡</b>：西郊品牌次新，可接驳5号线直达李家村。</li>
+<li><b>华润二十四城三期130㎡</b>：约150万元获得接近100㎡空间，重点检查楼栋、物业和换乘。</li>
+<li><b>高科紫薇时光云瀚112㎡</b>：高新新房，面积效率和板块属性较好。</li>
+<li><b>紫薇田园都市D区125㎡</b>：高新成熟生活区，重点核查停车与物业维护。</li>
+<li><b>德通昆仑序110㎡</b>：大寨路近城新房，预算和位置更均衡。</li>
+<li><b>东方米兰120㎡</b>：成熟二手房中更靠近城区的面积型备选。</li>
+</ol></section>
+
+<section class="card" id="mapSection"><h2>西安市候选项目分布地图</h2>
+<div class="note warning">地图边界已放宽至兴庆路以西；兴庆路以东仍不作为主要筛选范围。点位根据公开楼盘地址、道路交叉口或小区中心点制作，用于判断板块和相对位置。部分分期共用同一项目地址，可能出现标记重叠。财富中心2期B座1221作为常驻参考点显示，不受任何筛选按钮影响。</div>
+<div class="toolbar"><button class="btn active" data-filter="全部">全部</button><button class="btn" data-filter="新房">新房</button><button class="btn" data-filter="次新">次新房</button><button class="btn" data-filter="成熟二手">成熟二手房</button><button class="btn" data-filter="西南郊">西南郊</button><button class="btn" data-filter="西郊">西郊</button><button class="btn" data-filter="城南近城">城南近城</button><button class="btn" data-filter="城东边界">兴庆路西侧</button><button class="btn" data-filter="收藏">仅看收藏</button></div>
+<div class="legend"><span><i class="dot" style="background:#7c3aed"></i>新房</span><span><i class="dot" style="background:#16a34a"></i>次新房</span><span><i class="dot" style="background:#ea580c"></i>2016—2020二手房</span><span><i class="dot" style="background:#dc2626"></i>李家村站</span><span><i class="dot" style="background:#0f172a"></i>财富中心2期B座1221（常驻参考点）</span></div>
+<div id="map"></div><p class="small">地图底图为OpenStreetMap。打开HTML时需联网加载地图底图。</p></section>
+<div class="footer">生成日期：2026年7月｜本表用于购房初筛，不构成价格、学区、贷款或产权承诺。</div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+const items=[];
+</script>
+</body></html>
