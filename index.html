@@ -13,6 +13,7 @@
 .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.btn{border:1px solid var(--line);background:#fff;padding:8px 13px;border-radius:999px;cursor:pointer}.btn.active{background:var(--blue);color:#fff;border-color:var(--blue)}
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;min-width:1280px;font-size:13px}th{position:sticky;top:0;background:#f8fafc;z-index:2;text-align:left;padding:11px 9px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:11px 9px;border-bottom:1px solid #eef1f5;vertical-align:top}tr:hover{background:#f8fbff}.tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600}.new{background:#ede9fe;color:#6d28d9}.recent{background:#dcfce7;color:#166534}.old{background:#ffedd5;color:#9a3412}.region{background:#e0f2fe;color:#075985;white-space:nowrap}.score{font-weight:800;color:#1d4ed8;font-size:16px}.favorite-btn{border:1px solid #f59e0b;background:#fff;color:#b45309;padding:5px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;font-weight:700}.favorite-btn.active{background:#fef3c7;color:#92400e}.favorite-panel{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.favorite-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.favorite-chip{border:1px solid #f59e0b;background:#fffbeb;color:#92400e;border-radius:999px;padding:5px 10px;cursor:pointer}.favorite-empty{color:var(--muted);font-size:13px}.project-link{color:#1d4ed8;text-decoration:none;font-weight:800;cursor:pointer}.project-link:hover{text-decoration:underline}.unit-link{color:#475467;text-decoration:none;cursor:pointer}.unit-link:hover{color:#1d4ed8;text-decoration:underline}.map-flash{animation:mapFlash 1.2s ease-out}@keyframes mapFlash{0%{box-shadow:0 0 0 5px rgba(37,99,235,.45)}100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}}.green{color:var(--green);font-weight:700}.yellow{color:#b45309;font-weight:700}.small{font-size:12px;color:var(--muted)}
 .layout-btn{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:#1d4ed8;padding:1px 0;font:inherit;font-weight:700;white-space:nowrap;cursor:pointer}.layout-btn:hover .layout-label,.layout-btn:focus-visible .layout-label{text-decoration:underline}.layout-btn:focus-visible{outline:2px solid #93c5fd;outline-offset:3px;border-radius:4px}.layout-glyph{font-size:16px;line-height:1;color:#2563eb}
+.sort-btn{display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;color:inherit;padding:0;font:inherit;font-weight:700;white-space:nowrap;cursor:pointer}.sort-btn:hover{color:#1d4ed8}.sort-btn:focus-visible{outline:2px solid #93c5fd;outline-offset:3px;border-radius:4px}.sort-indicator{display:inline-block;width:14px;color:#64748b;text-align:center}.sort-btn.active .sort-indicator{color:#1d4ed8}
 .floorplan-overlay{position:fixed;inset:0;z-index:3000;background:rgba(15,23,42,.56);display:flex;justify-content:flex-end}.floorplan-overlay[hidden]{display:none}.floorplan-drawer{width:min(640px,100%);height:100%;background:#fff;display:flex;flex-direction:column;box-shadow:-12px 0 36px rgba(15,23,42,.2);animation:floorplanIn .2s ease-out}.floorplan-header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:20px 22px;border-bottom:1px solid var(--line)}.floorplan-eyebrow{margin:0 0 2px;color:#2563eb;font-size:12px;font-weight:800}.floorplan-header h2{margin:0;font-size:21px}.floorplan-meta{margin:3px 0 0;color:var(--muted);font-size:13px}.floorplan-close{flex:0 0 40px;width:40px;height:40px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#344054;font-size:27px;line-height:1;cursor:pointer}.floorplan-close:hover{background:#f8fafc}.floorplan-close:focus-visible{outline:2px solid #93c5fd;outline-offset:2px}.floorplan-body{padding:22px;overflow:auto}.floorplan-figure{margin:0 0 22px}.floorplan-image{display:block;width:100%;max-height:62vh;object-fit:contain;background:#f8fafc;border:1px solid var(--line);border-radius:8px}.floorplan-caption{margin-top:7px;color:var(--muted);font-size:12px}.floorplan-source{padding-top:16px;border-top:1px solid var(--line);color:#475467;font-size:13px}.floorplan-source p{margin:4px 0}.floorplan-source a{color:#1d4ed8;font-weight:700}.floorplan-empty{margin-top:4px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.floorplan-empty strong{font-size:18px}.floorplan-empty p{margin:7px 0;color:#475467}.dialog-open{overflow:hidden}@keyframes floorplanIn{from{transform:translateX(24px);opacity:.6}to{transform:translateX(0);opacity:1}}
 #map{height:690px;border-radius:14px;border:1px solid var(--line)}.legend{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}.dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:5px}.reference-pin{width:24px;height:24px;background:#0f172a;color:#fff;border:3px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 8px rgba(15,23,42,.45);display:flex;align-items:center;justify-content:center}.reference-pin span{transform:rotate(45deg);font-size:11px;font-weight:800}.footer{color:var(--muted);font-size:12px;text-align:center;padding:18px}
 @media(max-width:800px){.summary{grid-template-columns:1fr 1fr}.hero h1{font-size:27px}.content{padding:14px 9px}.card{padding:15px}#map{height:550px}.floorplan-header{padding:16px}.floorplan-body{padding:16px}.floorplan-image{max-height:68vh}}
@@ -37,9 +38,9 @@ button:disabled{cursor:wait;opacity:.62}.favorite-status{display:inline-flex;ali
 <div class="favorite-panel"><button class="btn" id="showFavoritesBtn" type="button">仅看收藏</button><button class="btn" id="showAllBtn" type="button">显示全部</button><span class="small favorite-status" id="favoriteStatus" role="status" aria-live="polite">正在连接收藏服务…</span></div>
 <div id="favoriteList" class="favorite-list"><span class="favorite-empty">尚未收藏任何房源。</span></div></section>
 
-<section class="card housing" data-group="新房"><h2>一、新房及尾盘（7个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th>预计产权套内</th><th>保守有效面积</th><th>参考总价</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="newRows"></tbody></table></div></section>
-<section class="card housing" data-group="次新"><h2>二、2020年后次新房（14个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>交付</th><th>格局</th><th>预计产权套内</th><th>有效使用面积</th><th>目标成交区间</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="recentRows"></tbody></table></div></section>
-<section class="card housing" data-group="成熟二手"><h2>三、2016—2020年为主的成熟二手房（9个具体户型）</h2><p class="small">本组重点补充2016—2020年交付项目；富力城北区继续按用户实际居住体验排除。</p><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th>预计产权套内</th><th>有效使用面积</th><th>目标成交区间</th><th>建议入手价</th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="oldRows"></tbody></table></div></section>
+<section class="card housing" data-group="新房"><h2>一、新房及尾盘（7个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="新房" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>保守有效面积</th><th>参考总价</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="新房" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="newRows"></tbody></table></div></section>
+<section class="card housing" data-group="次新"><h2>二、2020年后次新房（14个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>交付</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="recentRows"></tbody></table></div></section>
+<section class="card housing" data-group="成熟二手"><h2>三、2016—2020年为主的成熟二手房（9个具体户型）</h2><p class="small">本组重点补充2016—2020年交付项目；富力城北区继续按用户实际居住体验排除。</p><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="oldRows"></tbody></table></div></section>
 
 <section class="card"><h2>第一轮建议重点查看</h2><ol>
 <li><b>金地西沣公元一期109.53㎡</b>：西南郊，总价和有效面积平衡突出。</li>
@@ -130,9 +131,44 @@ function row(i){
   if(i.group==='次新') return `<tr data-project-key="${i.key}">${common}<td>${i.delivery}</td>${tail}</tr>`;
   return `<tr data-project-key="${i.key}">${common}${tail}</tr>`;
 }
-document.getElementById('newRows').innerHTML=items.filter(x=>x.group==='新房').sort((a,b)=>b.score-a.score).map((x,idx)=>row({...x,rank:idx+1})).join('');
-document.getElementById('recentRows').innerHTML=items.filter(x=>x.group==='次新').sort((a,b)=>b.score-a.score).map((x,idx)=>row({...x,rank:idx+1})).join('');
-document.getElementById('oldRows').innerHTML=items.filter(x=>x.group==='成熟二手').sort((a,b)=>b.score-a.score).map((x,idx)=>row({...x,rank:idx+1})).join('');
+const rowTargets={'新房':'newRows','次新':'recentRows','成熟二手':'oldRows'};
+const groupSortState={};
+function sortNumbers(value){
+  const matches=String(value).match(/\d+(?:\.\d+)?/g);
+  return matches?matches.map(Number):null;
+}
+function compareSortValues(a,b,key,direction){
+  const aNumbers=sortNumbers(a[key]);
+  const bNumbers=sortNumbers(b[key]);
+  if(!aNumbers&&!bNumbers)return b.score-a.score;
+  if(!aNumbers)return 1;
+  if(!bNumbers)return -1;
+  const valueDiff=(aNumbers[0]-bNumbers[0])||((aNumbers[1]??aNumbers[0])-(bNumbers[1]??bNumbers[0]));
+  const directedDiff=direction==='asc'?valueDiff:-valueDiff;
+  return directedDiff||(b.score-a.score);
+}
+function updateSortHeaders(group){
+  const state=groupSortState[group];
+  document.querySelectorAll(`[data-sort-group="${group}"]`).forEach(button=>{
+    const active=state?.key===button.dataset.sortKey;
+    const direction=active?state.direction:null;
+    const label=button.querySelector('span').textContent;
+    button.classList.toggle('active',active);
+    button.querySelector('.sort-indicator').textContent=direction==='asc'?'↑':(direction==='desc'?'↓':'↕');
+    button.closest('th').setAttribute('aria-sort',direction==='asc'?'ascending':(direction==='desc'?'descending':'none'));
+    button.setAttribute('aria-label',active?`${label}，当前${direction==='asc'?'升序':'降序'}，点击切换排序`:`${label}，点击升序排列`);
+  });
+}
+function renderGroupRows(group){
+  const groupItems=items.filter(item=>item.group===group);
+  const scoreOrder=[...groupItems].sort((a,b)=>b.score-a.score);
+  const rankByKey=new Map(scoreOrder.map((item,index)=>[item.key,index+1]));
+  const state=groupSortState[group];
+  const ordered=state?[...groupItems].sort((a,b)=>compareSortValues(a,b,state.key,state.direction)):scoreOrder;
+  document.getElementById(rowTargets[group]).innerHTML=ordered.map(item=>row({...item,rank:rankByKey.get(item.key)})).join('');
+  updateSortHeaders(group);
+}
+Object.keys(rowTargets).forEach(renderGroupRows);
 
 const map=L.map('map').setView([34.23,108.86],11);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
@@ -301,6 +337,16 @@ function closeFloorPlan(){
   floorPlanReturnFocus=null;
 }
 document.addEventListener('click',e=>{
+  const sortButton=e.target.closest('[data-sort-group][data-sort-key]');
+  if(sortButton){
+    const group=sortButton.dataset.sortGroup;
+    const key=sortButton.dataset.sortKey;
+    const current=groupSortState[group];
+    groupSortState[group]={key,direction:current?.key===key&&current.direction==='asc'?'desc':'asc'};
+    renderGroupRows(group);
+    filter(activeFilter);
+    return;
+  }
   const layout=e.target.closest('[data-floorplan-key]');
   if(layout){e.preventDefault();openFloorPlan(layout.dataset.floorplanKey,layout);return;}
   const fav=e.target.closest('[data-favorite-key]');
