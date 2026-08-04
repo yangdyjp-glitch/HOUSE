@@ -26,12 +26,12 @@ button:disabled{cursor:wait;opacity:.62}.favorite-status{display:inline-flex;ali
 <h1>西安长期自住型购房候选表</h1>
 <p>目标：有效使用面积85—100㎡为主｜核心预算约160万元｜总价超过210万元不进入排行榜</p>
 <p>区域结构：以西南郊和西郊为主，同时放宽至兴庆路以西的主城区；优先补充土门、大寨路、太白南路及城南近城区项目。高新项目不考察到李家村距离。</p>
-<div class="summary"><div class="metric"><b>30</b>具体户型候选</div><div class="metric"><b>7 / 14 / 9</b>新房 / 次新 / 2016—2020二手</div><div class="metric"><b>76—100㎡</b>扩展有效面积</div><div class="metric"><b>≤210万元</b>硬性总价上限</div></div>
+<div class="summary"><div class="metric"><b>30</b>具体户型候选</div><div class="metric"><b>7 / 7 / 16</b>新房 / 2020年后次新 / 成熟二手</div><div class="metric"><b>28 / 30</b>已核对户型图</div><div class="metric"><b>≤210万元</b>入围总价上限</div></div>
 </div></section>
 <div class="content wrap">
 <section class="card"><h2>使用口径</h2>
-<div class="note"><b>有效使用面积</b>以产权套内为核心，普通阳台、飘窗等赠送空间仅低权重折算；开放露台、设备平台、无法写入合同的赠送面积原则上不计。表内套内及有效面积为初筛估算，最终须以不动产权证、预测/实测绘报告及现场量房为准。</div>
-<p>交通评分：非高新项目只判断能否通过地铁直达李家村、换乘一次或换乘两次，不比较20、30或40分钟的乘车时长；高新项目改看板块内部生活与道路通达性。</p><div class="note warning"><b>最新边界：</b>兴庆路以西均可考虑；兴庆路以东仍原则上不纳入。为增加主城区选项，本版适当放宽面积和预算：有效面积可略低于85㎡或略高于100㎡作为备选，总价仍严格不超过210万元。</div>
+<div class="note"><b>真实资料优先</b>：楼盘名、面积、格局、套内和价格按房天下、链家/贝壳、安居客、楼盘网等公开资料回填。找不到完全对应户型时只使用同项目最接近的真实户型，并明确标注“同项目相似户型”；来源未公布套内就写“未公开”，不再用拟合值补齐。平台测评出现套内大于建面的异常值时不计入面积评分。</div>
+<p>评分统一按100分重算：产权套内适配30分、总价适配25分、格局15分、交通15分、楼盘与户型品质10分、资料可信度5分。总价超过210万元得0分；非普通住宅会在格局与品质项降权。非高新项目按到李家村的换乘口径评估，高新项目改看板块内部通达性。</p><div class="note warning"><b>最新边界：</b>兴庆路以西均可考虑；兴庆路以东仍原则上不纳入。超过210万元、商办/LOFT或关键面积未公开的项目保留为反例样本，但不会进入优先推荐。</div>
 </section>
 
 <section class="card" id="favoritesSection"><h2>我的收藏 <span id="favoriteCount" class="tag old">0</span></h2>
@@ -39,26 +39,24 @@ button:disabled{cursor:wait;opacity:.62}.favorite-status{display:inline-flex;ali
 <div id="favoriteList" class="favorite-list"><span class="favorite-empty">尚未收藏任何房源。</span></div></section>
 
 <section class="card housing" data-group="新房"><h2>一、新房及尾盘（7个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="新房" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>保守有效面积</th><th>参考总价</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="新房" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="newRows"></tbody></table></div></section>
-<section class="card housing" data-group="次新"><h2>二、2020年后次新房（14个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>交付</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="recentRows"></tbody></table></div></section>
-<section class="card housing" data-group="成熟二手"><h2>三、2016—2020年为主的成熟二手房（9个具体户型）</h2><p class="small">本组重点补充2016—2020年交付项目；富力城北区继续按用户实际居住体验排除。</p><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="inside"><span>预计产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="oldRows"></tbody></table></div></section>
+<section class="card housing" data-group="次新"><h2>二、2020年后次新房（7个具体户型）</h2><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>交付</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="inside"><span>产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="次新" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="recentRows"></tbody></table></div></section>
+<section class="card housing" data-group="成熟二手"><h2>三、成熟二手房（16个具体户型）</h2><p class="small">按公开建筑年代重新归组；富力城北区继续按用户实际居住体验排除。</p><div class="table-wrap"><table><thead><tr><th>排名</th><th>区域</th><th>楼盘与具体户型</th><th>格局</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="inside"><span>产权套内</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>有效使用面积</th><th>目标成交区间</th><th aria-sort="none"><button type="button" class="sort-btn" data-sort-group="成熟二手" data-sort-key="target"><span>建议入手价</span><span class="sort-indicator" aria-hidden="true">↕</span></button></th><th>交通口径</th><th>核心优点</th><th>主要风险</th><th>评分</th><th>收藏</th></tr></thead><tbody id="oldRows"></tbody></table></div></section>
 
 <section class="card"><h2>第一轮建议重点查看</h2><ol>
-<li><b>金地西沣公元一期109.53㎡</b>：西南郊，总价和有效面积平衡突出。</li>
-<li><b>融创西安宸院二期121.3㎡</b>：西南郊次新房，空间、房龄和生活成熟度均衡。</li>
-<li><b>中海昆明路九号110㎡</b>：西郊品牌次新，可接驳5号线直达李家村。</li>
-<li><b>华润二十四城三期130㎡</b>：约150万元获得接近100㎡空间，重点检查楼栋、物业和换乘。</li>
-<li><b>高科紫薇时光云瀚112㎡</b>：高新新房，面积效率和板块属性较好。</li>
-<li><b>紫薇田园都市D区125㎡</b>：高新成熟生活区，重点核查停车与物业维护。</li>
-<li><b>德通昆仑序110㎡</b>：大寨路近城新房，预算和位置更均衡。</li>
-<li><b>东方米兰120㎡</b>：成熟二手房中更靠近城区的面积型备选。</li>
+<li><b>紫薇西棠117㎡新B户型</b>：公开测评套内99.64㎡，挂牌约150万元起，空间和价格适配度最高。</li>
+<li><b>东方米兰115.42㎡</b>：公开套内94.94㎡，按当前小区均价约120—130万元。</li>
+<li><b>高新第五季126㎡</b>：公开套内99.4㎡，当前同面积挂牌约118—145万元。</li>
+<li><b>万家灯火116㎡</b>：公开套内103.97㎡，挂牌约120—130万元，但楼龄已到2012年前后。</li>
+<li><b>融创西安宸院121.33㎡</b>：公开套内96.1㎡，户型完整，重点核验二期楼栋和物业维护。</li>
+<li><b>金辉天鹅湾101.58㎡</b>：公开套内80.32㎡，总价约130—145万元，适合作为小面积备选。</li>
 </ol></section>
 
 <section class="card" id="mapSection"><h2>西安市候选项目分布地图</h2>
 <div class="note warning">地图边界已放宽至兴庆路以西；兴庆路以东仍不作为主要筛选范围。点位根据公开楼盘地址、道路交叉口或小区中心点制作，用于判断板块和相对位置。部分分期共用同一项目地址，可能出现标记重叠。财富中心2期B座1221作为常驻参考点显示，不受任何筛选按钮影响。</div>
 <div class="toolbar"><button class="btn active" data-filter="全部">全部</button><button class="btn" data-filter="新房">新房</button><button class="btn" data-filter="次新">次新房</button><button class="btn" data-filter="成熟二手">成熟二手房</button><button class="btn" data-filter="西南郊">西南郊</button><button class="btn" data-filter="西郊">西郊</button><button class="btn" data-filter="城南近城">城南近城</button><button class="btn" data-filter="城东边界">兴庆路西侧</button><button class="btn" data-filter="收藏">仅看收藏</button></div>
-<div class="legend"><span><i class="dot" style="background:#7c3aed"></i>新房</span><span><i class="dot" style="background:#16a34a"></i>次新房</span><span><i class="dot" style="background:#ea580c"></i>2016—2020二手房</span><span><i class="dot" style="background:#dc2626"></i>李家村站</span><span><i class="dot" style="background:#0f172a"></i>财富中心2期B座1221（常驻参考点）</span></div>
+<div class="legend"><span><i class="dot" style="background:#7c3aed"></i>新房</span><span><i class="dot" style="background:#16a34a"></i>2020年后次新</span><span><i class="dot" style="background:#ea580c"></i>成熟二手房</span><span><i class="dot" style="background:#dc2626"></i>李家村站</span><span><i class="dot" style="background:#0f172a"></i>财富中心2期B座1221（常驻参考点）</span></div>
 <div id="map"></div><p class="small">地图底图为OpenStreetMap。打开HTML时需联网加载地图底图。</p></section>
-<div class="footer">生成日期：2026年7月｜本表用于购房初筛，不构成价格、学区、贷款或产权承诺。</div>
+<div class="footer">数据核对：2026年8月4日｜本表用于购房初筛，不构成价格、学区、贷款或产权承诺。</div>
 </div>
 <div class="floorplan-overlay" id="floorPlanOverlay" hidden>
 <aside class="floorplan-drawer" id="floorPlanDialog" role="dialog" aria-modal="true" aria-labelledby="floorPlanTitle" tabindex="-1">
@@ -69,56 +67,132 @@ button:disabled{cursor:wait;opacity:.62}.favorite-status{display:inline-flex;ali
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script>
 const items=[
-{group:'新房',rank:1,region:'西南郊',name:'高科紫薇时光云瀚',unit:'112㎡户型',layout:'三室两厅两卫',inside:'约84—87㎡',usable:'约88—92㎡',price:'约174—177万',target:'≤172万',delivery:'新房',traffic:'高新项目，不考察李家村距离',pros:'高新属性，本地品牌，户型面积效率较高',risks:'交付周期与周边商业成熟度需核实',score:82,lat:34.1648,lng:108.7898,address:'高新三期创智路板块'},
-{group:'新房',rank:2,region:'西南郊',name:'紫薇华发云峰里',unit:'100㎡户型',layout:'三室两厅两卫',inside:'约77—80㎡',usable:'约83—87㎡',price:'约165—180万',target:'≤170万',delivery:'新房/现房',traffic:'高新项目，不考察李家村距离',pros:'高新成熟度和品牌组合较好',risks:'有效面积仅接近下限，实际可售户型和总价需核实',score:78,lat:34.1773,lng:108.8239,address:'高新三期板块'},
-{group:'新房',rank:3,region:'西南郊',name:'华宇·御璟天宸',unit:'110㎡户型',layout:'三室两厅两卫',inside:'约83—87㎡',usable:'约86—90㎡',price:'约204万',target:'≤190万',delivery:'新房',traffic:'高新项目，不考察李家村距离',pros:'高新区位与较新产品',risks:'接近210万元上限，预算性价比偏低',score:76,lat:34.1651,lng:108.8062,address:'高新三期外围'},
+{group:'新房',rank:1,region:'西南郊',name:'高科紫薇时光云瀚',unit:'112㎡户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'约174—177万',target:'≤172万',delivery:'新房',traffic:'高新项目，不考察李家村距离',pros:'高新属性、本地品牌，公开户型图已核对',risks:'公开资料未给出产权套内，交付周期和商业成熟度需核实',score:0,lat:34.1648,lng:108.7898,address:'高新三期创智路板块'},
+{group:'新房',rank:2,region:'西南郊',name:'紫薇华发云峰里',unit:'100㎡户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'约165—180万',target:'≤170万',delivery:'新房/现房',traffic:'高新项目，不考察李家村距离',pros:'高新成熟度和品牌组合较好，公开户型图已核对',risks:'产权套内未公开，不能再按经验推算有效面积',score:0,lat:34.1773,lng:108.8239,address:'高新三期板块'},
+{group:'新房',rank:3,region:'西南郊',name:'华宇·御璟天宸',unit:'110㎡户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'约204万',target:'≤190万',delivery:'新房',traffic:'高新项目，不考察李家村距离',pros:'高新区位与较新产品，公开户型图已核对',risks:'产权套内未公开且价格接近210万元上限',score:0,lat:34.1651,lng:108.8062,address:'高新三期外围'},
 
-{group:'次新',rank:1,region:'西南郊',name:'金地西沣公元一期',unit:'109.53㎡户型',layout:'三室两厅两卫',inside:'约85—89㎡',usable:'约87—91㎡',price:'目标135—145万',target:'约140万',delivery:'约2020年前后',traffic:'高新/西南郊项目，不考察李家村距离',pros:'总价低、有效面积达标、品牌社区',risks:'需核查临街、楼层、装修和具体卫生间配置',score:88,lat:34.1784,lng:108.8618,address:'西沣路与西部大道附近'},
-{group:'次新',rank:2,region:'西南郊',name:'融创西安宸院二期',unit:'121.3㎡户型',layout:'三室两厅两卫',inside:'约92—96㎡',usable:'约94—97㎡',price:'目标175—185万',target:'≤180万',delivery:'约2020年后',traffic:'高新/郭杜板块，不考察李家村距离',pros:'面积、房龄、生活配套较均衡',risks:'融创后续物业及维护情况需现场核验',score:86,lat:34.1689,lng:108.8736,address:'西沣路与西部大道十字向东约200米'},
-{group:'次新',rank:3,region:'西郊',name:'中海昆明路九号',unit:'110㎡户型',layout:'三室两厅两卫',inside:'约85—89㎡',usable:'约87—91㎡',price:'目标175—190万',target:'≤185万',delivery:'约2020年前后',traffic:'接驳5号线，可直达李家村',pros:'中海物业体系、位置靠近主城区',risks:'单价偏高，公摊不一定低',score:84,lat:34.2524,lng:108.8586,address:'昆明路与阿房路板块'},
-{group:'次新',rank:4,region:'西南郊',name:'天地源云水天境',unit:'105㎡户型',layout:'三室两厅两卫',inside:'约82—85㎡',usable:'约84—87㎡',price:'目标175—190万',target:'≤180万',delivery:'约2020年后',traffic:'高新项目，不考察李家村距离',pros:'高新区位、次新品质',risks:'有效面积接近下限，总价偏高',score:81,lat:34.1672,lng:108.8005,address:'高新三期板块'},
-{group:'次新',rank:5,region:'西郊',name:'华润二十四城四期',unit:'120㎡户型',layout:'三室两厅两卫',inside:'约91—95㎡',usable:'约93—96㎡',price:'目标135—155万',target:'≤150万',delivery:'约2020年前后',traffic:'1号线方向，前往李家村需换乘一次',pros:'商业成熟、社区完整、面积总价比突出',risks:'三桥拥堵与大社区密度，需要看具体楼栋',score:80,lat:34.2922,lng:108.8138,address:'三桥新街与天台路附近'},
-{group:'次新',rank:6,region:'西南郊',name:'紫薇西棠',unit:'116㎡户型',layout:'三室两厅两卫',inside:'约88—92㎡',usable:'约90—94㎡',price:'目标175—195万',target:'≤185万',delivery:'约2020年前后',traffic:'高新/西南郊项目，不考察李家村距离',pros:'房龄较新、面积适配长期自住',risks:'总价和物业实际口碑需核实',score:79,lat:34.1980,lng:108.8558,address:'雁塔西南板块'},
+{group:'成熟二手',rank:1,region:'西南郊',name:'金地西沣公元一期',unit:'110.64㎡挂牌户型',layout:'三室两厅两卫',inside:'未公开（以房本为准）',usable:'未公开',price:'挂牌约145万',target:'≤145万',delivery:'2015年',traffic:'高新/西南郊项目，不考察李家村距离',pros:'真实挂牌总价较低、品牌社区',risks:'仍未找到可对应的公开平面图，套内不能据建筑面积拟合',score:0,lat:34.1784,lng:108.8618,address:'西部大道'},
+{group:'次新',rank:1,region:'西南郊',name:'融创西安宸院二期',unit:'121.33㎡户型',layout:'三室两厅两卫',inside:'96.10㎡',usable:'约98㎡（含阳台折算）',price:'约175—185万',target:'≤180万',delivery:'约2020年后',traffic:'高新/郭杜板块，不考察李家村距离',pros:'公开户型报告套内96.1㎡，空间、房龄较均衡',risks:'公开资料为融创西安宸院同项目，二期楼栋仍需按房本核对',score:0,lat:34.1689,lng:108.8736,address:'西沣路与西部大道十字向东约200米'},
+{group:'次新',rank:2,region:'西郊',name:'中海昆明路九号',unit:'114㎡户型',layout:'三室两厅两卫',inside:'89.22㎡',usable:'约92㎡（含阳台折算）',price:'约195—205万',target:'≤195万',delivery:'约2020年前后',traffic:'接驳5号线，可直达李家村',pros:'公开套内89.22㎡，中海物业体系、位置靠近主城区',risks:'价格接近预算上限，需核对在售楼栋与装修',score:0,lat:34.2524,lng:108.8586,address:'昆明路与阿房路板块'},
+{group:'次新',rank:3,region:'西南郊',name:'天地源云水天境',unit:'166㎡真实主力户型',layout:'四室两厅两卫',inside:'未公开（以房本为准）',usable:'未公开',price:'同户型挂牌约315万',target:'超210万，不建议',delivery:'2022年',traffic:'高新项目，不考察李家村距离',pros:'真实主力户型为166—193㎡四房，产品本身完整',risks:'原105㎡三房为错误拟合；真实户型总价显著超预算',score:0,lat:34.1672,lng:108.8005,address:'云水二路与天谷六路交汇处西北角'},
+{group:'成熟二手',rank:2,region:'西郊',name:'华润二十四城四期',unit:'121㎡同项目相似户型',layout:'三室两厅两卫',inside:'未公开（以房本为准）',usable:'图示功能区约98.5㎡（非产权）',price:'同三房挂牌约135—145万',target:'≤140万',delivery:'2012年',traffic:'1号线方向，前往李家村需换乘一次',pros:'同项目真实121㎡三房图，商业成熟、总价较低',risks:'户型图未确认到四期具体楼栋，三桥拥堵和社区密度需核验',score:0,lat:34.2922,lng:108.8138,address:'三桥新街与天台路附近'},
+{group:'次新',rank:4,region:'西南郊',name:'紫薇西棠',unit:'117㎡新B户型',layout:'三室两厅两卫',inside:'99.64㎡',usable:'约100㎡',price:'挂牌约150万起',target:'≤155万',delivery:'2023年南区',traffic:'高新/西南郊项目，不考察李家村距离',pros:'公开新B户型套内99.64㎡，空间效率与价格适配突出',risks:'同面积旧A户型套内仅75.77㎡，必须核对具体楼栋和版本',score:0,lat:34.1980,lng:108.8558,address:'富裕一路与富源二路交汇处西北角'},
 
-{group:'成熟二手',rank:1,region:'西南郊',name:'紫薇田园都市D区',unit:'125㎡户型',layout:'三室两厅两卫',inside:'约97—101㎡',usable:'约98—102㎡',price:'目标175—195万',target:'≤185万',delivery:'2010—2019年',traffic:'高新项目，不考察李家村距离',pros:'高新成熟生活区，商业和日常服务完整',risks:'停车、物业、不同楼栋老化差异较大',score:84,lat:34.1641,lng:108.8852,address:'西部大道与博士路一带'},
-{group:'成熟二手',rank:2,region:'西郊',name:'华润二十四城三期',unit:'130㎡户型',layout:'三室两厅两卫',inside:'约98—102㎡',usable:'约99—103㎡',price:'目标135—155万',target:'≤150万',delivery:'2010—2019年',traffic:'1号线方向，前往李家村需换乘一次',pros:'约150万元获得接近100㎡空间，商业成熟',risks:'楼龄、公区折旧、拥堵和密度问题',score:83,lat:34.2913,lng:108.8165,address:'三桥华润二十四城'},
-{group:'成熟二手',rank:3,region:'西郊',name:'和平春天',unit:'125㎡户型',layout:'三室两厅两卫',inside:'约95—99㎡',usable:'约96—100㎡',price:'目标140—160万',target:'≤155万',delivery:'2010—2019年',traffic:'接驳5号线后可直达李家村',pros:'面积和总价均衡，靠近西郊主城区',risks:'社区品质与物业需逐栋核验',score:80,lat:34.2678,lng:108.8517,address:'阿房路板块'},
-{group:'成熟二手',rank:4,region:'西南郊',name:'紫薇田园都市非高溢价组团',unit:'120㎡户型',layout:'三室两厅两卫',inside:'约92—97㎡',usable:'约94—98㎡',price:'目标155—180万',target:'≤170万',delivery:'2010—2019年',traffic:'高新项目，不考察李家村距离',pros:'成熟生活配套、面积适中',risks:'必须逐组团筛选，避免学区和老旧溢价',score:77,lat:34.1650,lng:108.8898,address:'紫薇田园都市片区'},
+{group:'成熟二手',rank:3,region:'西南郊',name:'紫薇田园都市D区',unit:'125㎡户型',layout:'三室两厅两卫',inside:'94.06㎡',usable:'约96㎡（含阳台折算）',price:'约175—195万',target:'≤185万',delivery:'2010—2019年',traffic:'高新项目，不考察李家村距离',pros:'公开套内94.06㎡，高新成熟生活区配套完整',risks:'户型资料为紫薇田园都市同项目，D区楼栋仍需核验',score:0,lat:34.1641,lng:108.8852,address:'西部大道与博士路一带'},
+{group:'成熟二手',rank:4,region:'西郊',name:'华润二十四城三期',unit:'121㎡同项目相似户型',layout:'三室两厅两卫',inside:'未公开（以房本为准）',usable:'图示功能区约98.5㎡（非产权）',price:'约145—160万',target:'≤155万',delivery:'2010—2019年',traffic:'1号线方向，前往李家村需换乘一次',pros:'使用同项目最接近的121㎡真实三房图，商业成熟',risks:'原130㎡参数无真实平面图支撑，具体三期楼栋必须核对',score:0,lat:34.2913,lng:108.8165,address:'三桥华润二十四城'},
+{group:'成熟二手',rank:5,region:'西郊',name:'和平春天',unit:'115.68㎡A4户型',layout:'三室两厅两卫',inside:'未公开（以房本为准）',usable:'未公开',price:'挂牌约133—150万',target:'≤145万',delivery:'2015年',traffic:'接驳5号线后可直达李家村',pros:'同小区真实115.68㎡三房图，当前挂牌总价较低',risks:'套内未公开，物业与具体18/20号楼状态需核验',score:0,lat:34.2678,lng:108.8517,address:'三桥街道红光路和平村'},
+{group:'成熟二手',rank:6,region:'西南郊',name:'紫薇田园都市非高溢价组团',unit:'120㎡户型',layout:'三室两厅两卫',inside:'平台测评114.41㎡（异常待核）',usable:'不计入评分',price:'约155—180万',target:'≤170万',delivery:'2010—2019年',traffic:'高新项目，不考察李家村距离',pros:'成熟生活配套、公开户型图完整',risks:'平台套内/建面数据异常偏高，必须以房本重测；组团也需核对',score:0,lat:34.1650,lng:108.8898,address:'紫薇田园都市片区'},
 
-{group:'新房',rank:4,region:'西南郊',name:'南飞鸿玖玺大观',unit:'105㎡户型',layout:'三室两厅两卫',inside:'约80—84㎡',usable:'约83—87㎡',price:'约180—190万',target:'≤180万',delivery:'新房/尾盘',traffic:'大寨路板块，接驳地铁后前往李家村',pros:'更靠近主城区，商业与高新生活圈兼顾',risks:'面积略低于原目标，需核实实际套内和楼栋噪声',score:80,lat:34.2418,lng:108.8660,address:'大寨路板块'},
-{group:'新房',rank:5,region:'西南郊',name:'德通昆仑序',unit:'110㎡户型',layout:'三室两厅两卫',inside:'约84—88㎡',usable:'约86—90㎡',price:'约160—175万',target:'≤168万',delivery:'新房/现房',traffic:'大寨路板块，靠近主城区',pros:'价格接近核心预算，位置比高新三期更近城',risks:'开发商品牌和物业长期表现需核实',score:81,lat:34.2463,lng:108.8788,address:'大寨路与丈八北路附近'},
-{group:'新房',rank:6,region:'西郊',name:'居礼TOO',unit:'108㎡户型',layout:'三室两厅两卫',inside:'约82—86㎡',usable:'约84—88㎡',price:'约150—165万',target:'≤158万',delivery:'新房/现房',traffic:'土门板块，可接驳5号线直达李家村',pros:'靠近城区、总价较低、商业成熟度较好',risks:'项目体量及实际住宅属性需核实，面积偏下限',score:79,lat:34.2676,lng:108.9016,address:'土门板块'},
-{group:'新房',rank:7,region:'城东边界',name:'兴庆御苑',unit:'100㎡户型',layout:'三室两厅一卫/两卫待核',inside:'约76—80㎡',usable:'约79—83㎡',price:'约170—185万',target:'≤175万',delivery:'现房/新房',traffic:'兴庆路西侧边界，靠近主城区和李家村',pros:'位置近城、生活配套成熟，是东向放宽后的边界样本',risks:'有效面积低于主目标，户型和梯户比必须重点核验',score:76,lat:34.2588,lng:108.9770,address:'兴庆路附近'},
-{group:'次新',rank:7,region:'城南近城',name:'拉克雷公馆',unit:'105㎡户型',layout:'三室两厅两卫',inside:'约81—85㎡',usable:'约83—87㎡',price:'约180—195万',target:'≤185万',delivery:'2020—2021年',traffic:'太白南路板块，进城和到高新均方便',pros:'次新且靠近城区，日常便利明显优于远郊',risks:'单价偏高，小区体量和物业需现场核查',score:80,lat:34.2075,lng:108.9185,address:'太白南路板块'},
-{group:'次新',rank:8,region:'南郊',name:'蓝光公园华府二期',unit:'120㎡户型',layout:'三室两厅两卫',inside:'约91—95㎡',usable:'约93—97㎡',price:'约130—150万',target:'≤145万',delivery:'2019—2024年',traffic:'城南板块，前往李家村通常需换乘或驾车',pros:'有效面积和总价比突出，小高层/洋房产品可选',risks:'具体位置可能偏南，蓝光后续物业与维护需重点核查',score:79,lat:34.1515,lng:108.9020,address:'长安城南板块'},
-{group:'成熟二手',rank:5,region:'西南郊',name:'东方米兰',unit:'120㎡户型',layout:'三室两厅两卫',inside:'约92—96㎡',usable:'约94—98㎡',price:'约135—160万',target:'≤150万',delivery:'2010—2019年',traffic:'大寨路与团结南路附近，靠近主城区和高新',pros:'位置近城、面积总价平衡、生活便利成熟',risks:'楼龄、停车和物业维护需逐栋检查',score:81,lat:34.2446,lng:108.8867,address:'大寨路与团结南路西南角'}
-,{group:'次新',rank:9,region:'西南郊',name:'南飞鸿十年城',unit:'96㎡户型',layout:'三室两厅一卫',inside:'约74—77㎡',usable:'约76—79㎡',price:'约145—165万',target:'≤155万',delivery:'约2020年前后',traffic:'鱼化寨/高新西侧，板块内部通勤便利',pros:'位置较靠城、总价可控，适合作为小面积扩展备选',risks:'有效面积低于核心目标，需确认卫生间数量和卧室尺度',score:78,lat:34.2268,lng:108.8582,address:'鱼化寨与大寨路西段附近'}
-,{group:'次新',rank:10,region:'城南近城',name:'真爱万科公园华府',unit:'95㎡户型',layout:'三室两厅一卫',inside:'约73—76㎡',usable:'约76—79㎡',price:'约150—170万',target:'≤160万',delivery:'约2020年前后',traffic:'城南近城，驾车或公交前往李家村较方便',pros:'万科社区、位置靠近城区、生活配套成熟',risks:'面积偏紧，部分户型仅一卫，需核查噪声与楼栋密度',score:79,lat:34.2047,lng:108.9430,address:'南三环北侧、曲江西部板块'}
-,{group:'次新',rank:11,region:'城南近城',name:'中海凯旋门',unit:'106㎡户型',layout:'三室两厅一卫',inside:'约81—85㎡',usable:'约83—87㎡',price:'约165—185万',target:'≤175万',delivery:'约2020年前后',traffic:'城南方向，可接驳4号线或驾车进入李家村',pros:'中海物业、位置和社区成熟度较均衡',risks:'一卫户型需确认，价格高于160万元核心预算',score:82,lat:34.1829,lng:108.9502,address:'雁塔南部、曲江西侧板块'}
-,{group:'次新',rank:12,region:'西郊',name:'华府西城港湾',unit:'105㎡户型',layout:'三室两厅一卫',inside:'约80—84㎡',usable:'约82—86㎡',price:'约95—120万',target:'≤110万',delivery:'2019—2021年部分楼栋',traffic:'阿房路板块，接驳5号线可直达李家村',pros:'总价低、位置比远郊更靠城，现金流压力小',risks:'开发品质、物业、楼栋维护及产权年限需重点核查',score:76,lat:34.2728,lng:108.8365,address:'阿房路与西三环附近'}
-,{group:'次新',rank:13,region:'西南郊',name:'高新第五季',unit:'100㎡户型',layout:'三室两厅一卫',inside:'约77—80㎡',usable:'约79—82㎡',price:'约110—130万',target:'≤125万',delivery:'约2020年前后部分房源',traffic:'西南郊项目，不考察李家村距离',pros:'总价较低、高新生活辐射、面积达到扩展下限',risks:'部分楼栋年代和产品差异较大，需核对具体房本年份',score:77,lat:34.1805,lng:108.8793,address:'西部大道与郭杜板块'}
-,{group:'次新',rank:14,region:'西南郊',name:'金辉天鹅湾',unit:'100㎡户型',layout:'三室两厅一卫',inside:'约77—81㎡',usable:'约79—83㎡',price:'约145—165万',target:'≤155万',delivery:'约2020年前后部分组团',traffic:'西郊与高新之间，驾车进入主城区便利',pros:'位置较均衡、总价接近预算、社区体量完整',risks:'不同期数交付年份差异大，需确认物业和临街噪声',score:79,lat:34.2577,lng:108.8672,address:'昆明路与西三环内侧板块'}
-,{group:'成熟二手',rank:6,region:'西南郊',name:'万科高新华府',unit:'90㎡户型',layout:'三室两厅一卫',inside:'约70—73㎡',usable:'约74—77㎡',price:'约150—165万',target:'≤155万',delivery:'约2016—2019年',traffic:'高新板块，不考察李家村距离',pros:'万科物业、位置成熟、靠近高新生活圈',risks:'有效面积处于放宽后的最低档，三房尺度可能偏小',score:80,lat:34.1965,lng:108.9025,address:'西沣路与雁环路附近'}
-,{group:'成熟二手',rank:7,region:'西南郊',name:'中铁缤纷南郡',unit:'90㎡户型',layout:'三室两厅一卫',inside:'约70—73㎡',usable:'约74—77㎡',price:'约155—170万',target:'≤160万',delivery:'约2016年前后部分楼栋',traffic:'科技八路板块，高新内部出行便利',pros:'位置成熟、商业与高新通勤方便、房源供应多',risks:'小户型空间紧凑，部分楼栋楼龄和停车压力明显',score:80,lat:34.2059,lng:108.8860,address:'科技八路与丈八北路附近'}
-,{group:'成熟二手',rank:8,region:'南郊',name:'龙湖花千树',unit:'95㎡户型',layout:'三室两厅一卫',inside:'约74—77㎡',usable:'约76—80㎡',price:'约165—185万',target:'≤175万',delivery:'约2017—2020年',traffic:'城南方向，通常需换乘一次或驾车前往李家村',pros:'龙湖物业、社区环境较好、房龄适中',risks:'位置偏南且价格不低，小户型只有一卫的概率较高',score:78,lat:34.1518,lng:108.9052,address:'长安区大学城北侧板块'}
-,{group:'成熟二手',rank:9,region:'西南郊',name:'万家灯火',unit:'100㎡户型',layout:'三室两厅一卫',inside:'约77—81㎡',usable:'约79—83㎡',price:'约115—135万',target:'≤125万',delivery:'2016—2020年部分楼栋',traffic:'科技八路方向，高新内部出行便利',pros:'总价低、位置接近高新、生活配套较成熟',risks:'小区不同楼栋年代跨度大，物业和公区需逐栋核验',score:78,lat:34.2037,lng:108.8868,address:'科技八路与丈八北路周边'}
+{group:'新房',rank:4,region:'西南郊',name:'南飞鸿玖玺大观',unit:'105㎡户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'约180—190万',target:'≤180万',delivery:'新房/尾盘',traffic:'大寨路板块，接驳地铁后前往李家村',pros:'更靠近主城区，公开户型图已核对',risks:'产权套内未公开，楼栋噪声与尾盘可售情况需核实',score:0,lat:34.2418,lng:108.8660,address:'大寨路板块'},
+{group:'新房',rank:5,region:'西南郊',name:'德通·昆仑序',unit:'116㎡雅序户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'公开总价约174万',target:'≤174万',delivery:'预计2026—2027年',traffic:'丈八北路与科技路，靠近主城区',pros:'真实116㎡三房两卫，当前公开总价仍在预算内',risks:'交付周期、开发商和物业长期表现需核实',score:0,lat:34.2463,lng:108.8788,address:'丈八北路与科技路十字'},
+{group:'新房',rank:6,region:'西郊',name:'居礼TOO',unit:'108.93㎡A1户型',layout:'LOFT两层（约3卧2卫）',inside:'83.07㎡',usable:'83.07㎡（套内）',price:'约150—165万',target:'仅商办属性可接受时考虑',delivery:'2024—2025年',traffic:'土门板块，可接驳5号线直达李家村',pros:'公开图给出套内83.07㎡，两层空间可分区使用',risks:'商水商电、6梯28户、商办/公寓属性，不等同普通住宅',score:0,lat:34.2676,lng:108.9016,address:'沣镐东路与西二环十字东'},
+{group:'新房',rank:7,region:'城东边界',name:'兴庆御苑',unit:'113.19㎡户型',layout:'三室两厅两卫',inside:'未公开（以合同为准）',usable:'未公开',price:'按均价约230—245万',target:'超210万，不建议',delivery:'现房/新房',traffic:'兴庆路西侧边界，靠近主城区和李家村',pros:'真实113.19㎡三房两卫，位置近城',risks:'原100㎡三房为错误匹配；当前总价明显超预算',score:0,lat:34.2588,lng:108.9770,address:'兴庆路附近'},
+{group:'次新',rank:5,region:'城南近城',name:'拉克雷公馆',unit:'95㎡户型',layout:'三室一厅一卫',inside:'图示约67.8㎡（不含阳台）',usable:'图示约73.8㎡（含阳台）',price:'约165—180万',target:'≤172万',delivery:'2020—2021年',traffic:'太白南路板块，进城和到高新均方便',pros:'链家实测图公开各房间尺寸，位置靠近城区',risks:'实际为三室一厅一卫，空间明显低于核心目标',score:0,lat:34.2075,lng:108.9185,address:'太白南路板块'},
+{group:'次新',rank:6,region:'西郊',name:'蓝光公园华府二期',unit:'110㎡同项目相似户型',layout:'三室两厅两卫',inside:'88.54㎡',usable:'约91㎡（含阳台折算）',price:'公开历史总价198万',target:'≤185万',delivery:'2019—2024年分期',traffic:'三桥方向，前往李家村需换乘一次',pros:'真实110㎡户型套内88.54㎡，三房两卫完整',risks:'户型图未确认到二期具体楼栋，公开价格为历史口径；物业维护需核查',score:0,lat:34.2904816,lng:108.828186,address:'天台路与征和四路西南角'},
+{group:'成熟二手',rank:7,region:'西南郊',name:'东方米兰',unit:'115.42㎡户型',layout:'三室两厅两卫',inside:'94.94㎡',usable:'约96㎡（含阳台折算）',price:'按均价约120—130万',target:'≤125万',delivery:'2010—2019年',traffic:'大寨路与团结南路附近，靠近主城区和高新',pros:'公开套内94.94㎡，面积、总价和近城位置平衡突出',risks:'楼龄、停车和物业维护需逐栋检查',score:0,lat:34.2446,lng:108.8867,address:'大寨路与团结南路西南角'},
+{group:'次新',rank:7,region:'西南郊',name:'南飞鸿十年城',unit:'101㎡户型',layout:'三室两厅一卫',inside:'未公开（以房本为准）',usable:'未公开',price:'约155—165万',target:'≤160万',delivery:'约2020年前后',traffic:'鱼化寨/高新西侧，板块内部通勤便利',pros:'真实101㎡三房图，总价可控、位置较靠城',risks:'一卫且套内未公开，不能继续沿用原96㎡拟合数据',score:0,lat:34.2268,lng:108.8582,address:'鱼化寨与大寨路西段附近'},
+{group:'成熟二手',rank:8,region:'城南近城',name:'真爱万科公园华府',unit:'101.93㎡挂牌户型',layout:'三室一厅（两卫描述待房本核对）',inside:'未公开（以房本为准）',usable:'未公开',price:'挂牌约160万',target:'≤160万',delivery:'2011年建成',traffic:'城南近城，驾车或公交前往李家村较方便',pros:'万科物业、真实挂牌面积和总价已回填',risks:'仍未找到可信平面图；挂牌厅卫描述不一致，不能推定格局',score:0,lat:34.2047,lng:108.9430,address:'南三环北侧、曲江西部板块'},
+{group:'成熟二手',rank:9,region:'城南近城',name:'中海凯旋门',unit:'106㎡户型',layout:'三室两厅两卫',inside:'83.28㎡',usable:'约86㎡（含阳台折算）',price:'约165—185万',target:'≤175万',delivery:'成熟二手',traffic:'城南方向，可接驳4号线或驾车进入李家村',pros:'公开套内83.28㎡，格局已纠正为三房两卫',risks:'价格高于160万元核心预算，具体楼栋和楼龄需核验',score:0,lat:34.1829,lng:108.9502,address:'雁塔南部、曲江西侧板块'},
+{group:'成熟二手',rank:10,region:'西郊',name:'华府西城港湾',unit:'107.1㎡二期21#户型',layout:'三室两厅两卫',inside:'未公开（以房本为准）',usable:'未公开',price:'约90—100万',target:'≤95万',delivery:'成熟二手',traffic:'枣园板块，可接驳1号线后换乘前往李家村',pros:'真实107.1㎡三房两卫图，总价低',risks:'原98.46㎡公开标准户型实际为两房；开发品质与产权需核查',score:0,lat:34.2728,lng:108.8365,address:'莲湖区大庆路881号'},
+{group:'成熟二手',rank:11,region:'西南郊',name:'高新第五季',unit:'126㎡户型',layout:'三室两厅两卫',inside:'99.40㎡',usable:'约101㎡（含阳台折算）',price:'挂牌约118—145万',target:'≤145万',delivery:'2015年',traffic:'西南郊项目，不考察李家村距离',pros:'公开套内99.4㎡，真实三房户型空间和价格适配突出',risks:'小区容积率较高，物业和具体楼栋维护需核查',score:0,lat:34.1805,lng:108.8793,address:'西沣路与锦业二路十字东北角'},
+{group:'成熟二手',rank:12,region:'西南郊',name:'金辉天鹅湾',unit:'101.58㎡户型',layout:'三室两厅一卫',inside:'80.32㎡',usable:'约83㎡（含双阳台折算）',price:'约130—145万',target:'≤135万',delivery:'成熟二手',traffic:'西郊与高新之间，驾车进入主城区便利',pros:'公开套内80.32㎡，总价较低、位置均衡',risks:'只有一卫且套内低于核心目标，期数与物业需确认',score:0,lat:34.2577,lng:108.8672,address:'昆明路与西三环内侧板块'},
+{group:'成熟二手',rank:13,region:'西南郊',name:'万科高新华府',unit:'90㎡户型',layout:'三室两厅一卫',inside:'平台测评95.03㎡（异常待核）',usable:'不计入评分',price:'约150—165万',target:'≤155万',delivery:'约2016—2019年',traffic:'高新板块，不考察李家村距离',pros:'万科物业、位置成熟，公开户型图已核对',risks:'平台出现套内大于建面的异常数据，必须按房本重测',score:0,lat:34.1965,lng:108.9025,address:'西沣路与雁环路附近'},
+{group:'成熟二手',rank:14,region:'西南郊',name:'中铁缤纷南郡',unit:'124㎡户型',layout:'三室两厅两卫',inside:'80.02㎡',usable:'约84㎡（含双阳台折算）',price:'同户型挂牌约168—190万',target:'≤168万',delivery:'2013年',traffic:'科技八路板块，高新内部出行便利',pros:'真实124㎡三房两卫，公开套内80.02㎡',risks:'得房率仅64.53%，原90㎡三房实际为两房，空间效率偏低',score:0,lat:34.2059,lng:108.8860,address:'丈八四路6号'},
+{group:'成熟二手',rank:15,region:'南郊',name:'龙湖花千树',unit:'95㎡户型',layout:'三室两厅一卫',inside:'未公开（以房本为准）',usable:'未公开',price:'约165—185万',target:'≤175万',delivery:'约2017—2020年',traffic:'城南方向，通常需换乘一次或驾车前往李家村',pros:'龙湖物业、已核对3个95㎡真实户型版本',risks:'位置偏南且价格不低，产权套内未公开',score:0,lat:34.1518,lng:108.9052,address:'长安区大学城北侧板块'},
+{group:'成熟二手',rank:16,region:'西南郊',name:'万家灯火',unit:'116㎡户型',layout:'三室两厅两卫',inside:'103.97㎡',usable:'约105㎡（含阳台折算）',price:'挂牌约120—130万',target:'≤130万',delivery:'2012年',traffic:'科技八路方向，高新内部出行便利',pros:'公开套内103.97㎡，价格低、空间大、靠近高新',risks:'楼龄已约14年，容积率3.6，物业与公区需逐栋核验',score:0,lat:34.2037,lng:108.8868,address:'科技八路与丈八六路周边'},
 
 ];
 items.forEach((i,idx)=>i.key='project-'+idx);
 const floorPlans={
-  'project-0':{images:['assets/floorplans/project-0-1.png'],source:'https://xa.jiwu.com/huxing/4200716.html',checkedAt:'2026-08-04'},
-  'project-1':{images:['assets/floorplans/project-1-1.jpg'],source:'https://xa.jiwu.com/huxing/3658188.html',checkedAt:'2026-08-04'},
-  'project-2':{images:['assets/floorplans/project-2-1.jpg','assets/floorplans/project-2-2.jpg'],source:'https://xa.jiwu.com/huxing/3556552.html',checkedAt:'2026-08-04'},
+  'project-0':{images:['assets/floorplans/project-0-1.png'],source:'https://xa.jiwu.com/huxing/4200716.html',sourceLabel:'吉屋网公开楼盘资料',checkedAt:'2026-08-04',verification:'楼盘、112㎡和三室两厅两卫已核对；公开页未给出产权套内。'},
+  'project-1':{images:['assets/floorplans/project-1-1.jpg'],source:'https://xa.jiwu.com/huxing/3658188.html',sourceLabel:'吉屋网公开楼盘资料',checkedAt:'2026-08-04',verification:'楼盘、100㎡和三室两厅两卫已核对；公开页未给出产权套内。'},
+  'project-2':{images:['assets/floorplans/project-2-1.jpg','assets/floorplans/project-2-2.jpg'],source:'https://xa.jiwu.com/huxing/3556552.html',sourceLabel:'吉屋网公开楼盘资料',checkedAt:'2026-08-04',verification:'楼盘、110㎡和三室两厅两卫已核对；公开页未给出产权套内。'},
   'project-4':{images:['assets/floorplans/project-4-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610190154/210356303/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'公开资料确认同项目约121.33㎡三室两厅两卫；具体二期楼栋请按房本和合同核对。'},
+  'project-5':{images:['assets/floorplans/project-5-1.png'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610190020/h458375/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'114㎡三室两厅两卫，公开套内89.22㎡，已按该真实户型更新表格。'},
+  'project-6':{images:['assets/floorplans/project-6-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610192534/209731085/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'166㎡四室两厅两卫为项目真实主力户型；原105㎡三房数据已废弃。'},
+  'project-7':{images:['assets/floorplans/project-7-1.jpg'],captions:['同项目121㎡三室两厅两卫｜具体四期楼栋待核'],source:'https://m.fang.com/xf/xian/3611070922/388554.htm',sourceLabel:'房天下华润二十四城户型资料',checkedAt:'2026-08-04',verification:'未找到四期完全对应图，采用华润二十四城同项目最接近的121㎡真实三房；不能据此确认具体楼栋。',verificationType:'warning'},
+  'project-8':{images:['assets/floorplans/project-8-2.png','assets/floorplans/project-8-1.png'],captions:['117㎡新B户型｜套内99.64㎡｜本行评分依据','117㎡旧A户型｜套内75.77㎡｜同面积差异对照'],source:'https://m.fang.com/xf/xian/3610189788/allhuxing.html',sourceLabel:'房天下紫薇西棠户型资料',checkedAt:'2026-08-04',verification:'同为117㎡，新旧版本套内差异很大；看房时必须核对户型版本和楼栋。'},
   'project-9':{images:['assets/floorplans/project-9-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610070398/204553835/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'公开资料确认紫薇田园都市整体125㎡三室两厅两卫；具体D区和楼栋请按房本及挂牌资料核对。'},
-  'project-12':{images:['assets/floorplans/project-12-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610070398/204554253/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'公开资料确认紫薇田园都市整体120㎡三室两厅两卫；具体“非高溢价组团”和楼栋请按房本及挂牌资料核对。'},
-  'project-13':{images:['assets/floorplans/project-13-1.jpg','assets/floorplans/project-13-2.jpg'],source:'https://xa.jiwu.com/huxing/3599101.html',checkedAt:'2026-08-04'},
-  'project-16':{images:['assets/floorplans/project-16-1.jpg'],source:'https://mfang.58.com/xa/xinfang/xq104665736/huxingtu/',sourceLabel:'58同城爱房户型资料',checkedAt:'2026-08-04',verification:'公开资料中的100㎡为两室两厅一卫，与表内“三室两厅一卫/两卫待核”不一致，请重点核对具体房源。',verificationType:'warning'},
-  'project-22':{images:['assets/floorplans/project-22-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611141040/205786345/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'公开资料中的106㎡为三室两厅两卫，与表内“三室两厅一卫”不一致，请重点核对具体房源。',verificationType:'warning'},
-  'project-26':{images:['assets/floorplans/project-26-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611171412/205762673/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04'},
-  'project-27':{images:['assets/floorplans/project-27-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610681778/150801308/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'公开资料中的90.32㎡为两室两厅一卫，与表内“三室两厅一卫”不一致，请重点核对具体房源。',verificationType:'warning'},
-  'project-28':{images:['assets/floorplans/project-28-1.webp','assets/floorplans/project-28-2.webp','assets/floorplans/project-28-3.webp'],captions:['D户型｜约95㎡｜三室两厅一卫','C户型｜约95㎡｜三室两厅一卫','B户型｜约95㎡｜三室两厅一卫'],source:'https://m.fang.com/xiaoqu/strategy/xian/3611128508.html',sourceLabel:'房天下龙湖花千树户型资料',checkedAt:'2026-08-04',verification:'公开资料包含3个约95㎡三室两厅一卫版本，具体楼栋对应请按房源资料核对。'}
+  'project-10':{images:['assets/floorplans/project-7-1.jpg'],captions:['同项目121㎡三室两厅两卫｜具体三期楼栋待核'],source:'https://m.fang.com/xf/xian/3611070922/388554.htm',sourceLabel:'房天下华润二十四城户型资料',checkedAt:'2026-08-04',verification:'未找到三期原130㎡完全对应图，采用同项目最接近的121㎡真实三房并同步改表；具体楼栋仍待房本核对。',verificationType:'warning'},
+  'project-11':{images:['assets/floorplans/project-11-1.jpg'],source:'https://m.fang.com/xf/xian/3611094098/109685.htm',sourceLabel:'房天下和平春天户型资料',checkedAt:'2026-08-04',verification:'采用同小区115.68㎡A4三室两厅两卫真实户型；公开资料未给出产权套内。'},
+  'project-12':{images:['assets/floorplans/project-12-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610070398/204554253/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'平台给出的套内114.41㎡/建面120㎡明显异常偏高，已从面积评分中剔除；具体组团必须按房本核对。',verificationType:'warning'},
+  'project-13':{images:['assets/floorplans/project-13-1.jpg','assets/floorplans/project-13-2.jpg'],source:'https://xa.jiwu.com/huxing/3599101.html',sourceLabel:'吉屋网公开楼盘资料',checkedAt:'2026-08-04',verification:'楼盘、105㎡和三室两厅两卫已核对；公开页未给出产权套内。'},
+  'project-14':{images:['assets/floorplans/project-14-1.png'],source:'https://m.fang.com/xf/housereport/xian/3610202856.html',sourceLabel:'房天下德通·昆仑序价值报告',checkedAt:'2026-08-04',verification:'116㎡雅序为在售三室两厅两卫，公开总价约174万元。'},
+  'project-15':{images:['assets/floorplans/project-15-1.jpg'],source:'https://xa.loupan.com/layout/list-7149198.html',sourceLabel:'楼盘网居礼TOO户型资料',checkedAt:'2026-08-04',verification:'A1户型建面108.93㎡、套内83.07㎡；该项目为商办/LOFT，商水商电且6梯28户，不按普通住宅评价。',verificationType:'warning'},
+  'project-16':{images:['assets/floorplans/project-16-real.png'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610192524/h1579114/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'已改为真实113.19㎡三室两厅两卫；按当前均价估算总价超过210万元。'},
+  'project-17':{images:['assets/floorplans/project-17-1.jpg'],source:'https://news.lianjia.com/xa/xiaoqu/3820023942222486.html',sourceLabel:'链家拉克雷公馆户型资料',checkedAt:'2026-08-04',verification:'95㎡真实户型为三室一厅一卫；图中房间标注面积合计约67.8㎡，另有约6㎡阳台。'},
+  'project-18':{images:['assets/floorplans/project-18-1.png'],source:'https://m.fang.com/xf/xian/3610190004/63056.htm',sourceLabel:'房天下蓝光公园华府户型资料',checkedAt:'2026-08-04',verification:'采用同项目110㎡三室两厅两卫真实户型，公开套内88.54㎡；具体二期楼栋待核。',verificationType:'warning'},
+  'project-19':{images:['assets/floorplans/project-19-1.png'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610514068/205770479/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'115.42㎡三室两厅两卫，公开套内94.94㎡，已按真实值更新。'},
+  'project-20':{images:['assets/floorplans/project-20-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611200178/h63074/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'101㎡真实户型为三室两厅一卫；产权套内未公开。'},
+  'project-22':{images:['assets/floorplans/project-22-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611141040/205786345/0',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'106㎡真实户型为三室两厅两卫，公开套内83.28㎡；表格格局已纠正。'},
+  'project-23':{images:['assets/floorplans/project-23-1.jpg'],source:'https://m.fang.com/xf/xian/3610970178/108924.htm',sourceLabel:'房天下华府西城港湾户型资料',checkedAt:'2026-08-04',verification:'采用二期21号楼107.1㎡三室两厅两卫真实户型；98.46㎡公开标准户型实际为两房。'},
+  'project-24':{images:['assets/floorplans/project-24-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611106450/h113051/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'126㎡三室两厅两卫，公开套内99.4㎡；建筑年代已按2015年归入成熟二手。'},
+  'project-25':{images:['assets/floorplans/project-25-1.png'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610956772/h386447/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'101.58㎡三室两厅一卫，公开套内80.32㎡，已按真实值更新。'},
+  'project-26':{images:['assets/floorplans/project-26-1.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3611171412/205762673/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'平台给出的套内95.03㎡大于建面90㎡，属于明显异常数据，已从面积评分中剔除。',verificationType:'warning'},
+  'project-27':{images:['assets/floorplans/project-27-1-real.jpg'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610681778/205771707/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'已替换为真实124㎡三室两厅两卫，公开套内80.02㎡；原90.32㎡图实际为两房，已废弃。'},
+  'project-28':{images:['assets/floorplans/project-28-1.webp','assets/floorplans/project-28-2.webp','assets/floorplans/project-28-3.webp'],captions:['D户型｜约95㎡｜三室两厅一卫','C户型｜约95㎡｜三室两厅一卫','B户型｜约95㎡｜三室两厅一卫'],source:'https://m.fang.com/xiaoqu/strategy/xian/3611128508.html',sourceLabel:'房天下龙湖花千树户型资料',checkedAt:'2026-08-04',verification:'公开资料包含3个约95㎡三室两厅一卫版本，具体楼栋对应请按房源资料核对。'},
+  'project-29':{images:['assets/floorplans/project-29-1.png'],source:'https://m.fang.com/xiaoqu/xian/hxreport/3610904704/h384834/0/',sourceLabel:'房天下户型报告',checkedAt:'2026-08-04',verification:'116㎡三室两厅两卫，公开套内103.97㎡；建筑年代已按2012年更新。'}
 };
+const scoreProfiles={
+  'project-0':{inside:null,price:175,baths:2,transit:13,quality:8,confidence:3},
+  'project-1':{inside:null,price:170,baths:2,transit:13,quality:8,confidence:3},
+  'project-2':{inside:null,price:204,baths:2,transit:12,quality:8,confidence:3},
+  'project-3':{inside:null,price:145,baths:2,transit:13,quality:8,confidence:2},
+  'project-4':{inside:96.1,price:180,baths:2,transit:13,quality:9,confidence:5},
+  'project-5':{inside:89.22,price:200,baths:2,transit:13,quality:9,confidence:5},
+  'project-6':{inside:null,price:315,baths:2,transit:13,quality:9,confidence:5},
+  'project-7':{inside:null,price:140,baths:2,transit:11,quality:8,confidence:3},
+  'project-8':{inside:99.64,price:150,baths:2,transit:13,quality:8,confidence:5},
+  'project-9':{inside:94.06,price:185,baths:2,transit:13,quality:8,confidence:4},
+  'project-10':{inside:null,price:153,baths:2,transit:11,quality:8,confidence:3},
+  'project-11':{inside:null,price:145,baths:2,transit:12,quality:7,confidence:4},
+  'project-12':{inside:null,price:170,baths:2,transit:13,quality:7,confidence:2},
+  'project-13':{inside:null,price:185,baths:2,transit:12,quality:8,confidence:3},
+  'project-14':{inside:null,price:174,baths:2,transit:12,quality:8,confidence:5},
+  'project-15':{inside:83.07,price:158,baths:2,transit:14,quality:4,confidence:5,residential:false,eligible:false},
+  'project-16':{inside:null,price:237,baths:2,transit:15,quality:7,confidence:5},
+  'project-17':{inside:67.8,price:172,baths:1,transit:14,quality:6,confidence:5},
+  'project-18':{inside:88.54,price:198,baths:2,transit:11,quality:7,confidence:5},
+  'project-19':{inside:94.94,price:125,baths:2,transit:13,quality:7,confidence:5},
+  'project-20':{inside:null,price:160,baths:1,transit:13,quality:7,confidence:5},
+  'project-21':{inside:null,price:160,baths:2,transit:14,quality:8,confidence:2},
+  'project-22':{inside:83.28,price:175,baths:2,transit:13,quality:8,confidence:5},
+  'project-23':{inside:null,price:95,baths:2,transit:12,quality:5,confidence:5},
+  'project-24':{inside:99.4,price:145,baths:2,transit:13,quality:6,confidence:5},
+  'project-25':{inside:80.32,price:135,baths:1,transit:12,quality:7,confidence:5},
+  'project-26':{inside:null,price:155,baths:1,transit:13,quality:8,confidence:2},
+  'project-27':{inside:80.02,price:168,baths:2,transit:14,quality:7,confidence:5},
+  'project-28':{inside:null,price:175,baths:1,transit:10,quality:8,confidence:4},
+  'project-29':{inside:103.97,price:130,baths:2,transit:14,quality:6,confidence:5}
+};
+function scoreSpace(inside){
+  if(inside==null)return 12;
+  if(inside>=85&&inside<=100)return 30;
+  if((inside>=80&&inside<85)||(inside>100&&inside<=105))return 24;
+  if((inside>=75&&inside<80)||(inside>105&&inside<=110))return 18;
+  if(inside>=70&&inside<75)return 10;
+  return 5;
+}
+function scorePrice(price){
+  if(price<=150)return 25;
+  if(price<=160)return 22;
+  if(price<=170)return 18;
+  if(price<=180)return 14;
+  if(price<=190)return 10;
+  if(price<=210)return 5;
+  return 0;
+}
+function calculateScore(profile){
+  const parts={space:scoreSpace(profile.inside),price:scorePrice(profile.price),layout:profile.residential===false?4:(profile.baths>=2?15:10),transit:profile.transit,quality:profile.quality,confidence:profile.confidence};
+  let total=Object.values(parts).reduce((sum,value)=>sum+value,0);
+  if(profile.eligible===false)total=Math.min(total,60);
+  return {total:Math.round(total),parts};
+}
+items.forEach(item=>{
+  const result=calculateScore(scoreProfiles[item.key]);
+  item.score=result.total;
+  item.scoreNote=`套内 ${result.parts.space}/30｜总价 ${result.parts.price}/25｜格局 ${result.parts.layout}/15｜交通 ${result.parts.transit}/15｜品质 ${result.parts.quality}/10｜资料 ${result.parts.confidence}/5`;
+});
 const LEGACY_FAVORITES_KEY='xian-house-favorites-v1';
 let favorites=new Set();
 let favoritesReady=false;
@@ -134,7 +208,7 @@ function favoriteButton(key,label='收藏'){
 }
 function row(i){
   let common=`<td>${i.rank}</td><td><span class="tag region">${i.region}</span></td><td><a class="project-link" href="#mapSection" onclick="focusProject('${i.key}');return false;">${i.name}</a><br><a class="small unit-link" href="#mapSection" onclick="focusProject('${i.key}');return false;">${i.unit}</a></td>`;
-  let tail=`<td><button type="button" class="layout-btn" data-floorplan-key="${i.key}" aria-haspopup="dialog" aria-expanded="false" aria-label="查看${i.name}${i.unit}${i.layout}户型图"><span class="layout-label">${i.layout}</span><span class="layout-glyph" aria-hidden="true">▦</span></button></td><td>${i.inside}</td><td><b>${i.usable}</b></td><td>${i.price}</td><td>${i.target}</td><td>${i.traffic}</td><td>${i.pros}</td><td>${i.risks}</td><td class="score">${i.score}</td><td>${favoriteButton(i.key)}</td>`;
+  let tail=`<td><button type="button" class="layout-btn" data-floorplan-key="${i.key}" aria-haspopup="dialog" aria-expanded="false" aria-label="查看${i.name}${i.unit}${i.layout}户型图"><span class="layout-label">${i.layout}</span><span class="layout-glyph" aria-hidden="true">▦</span></button></td><td>${i.inside}</td><td><b>${i.usable}</b></td><td>${i.price}</td><td>${i.target}</td><td>${i.traffic}</td><td>${i.pros}</td><td>${i.risks}</td><td class="score"><span title="${i.scoreNote}" aria-label="评分${i.score}分，${i.scoreNote}">${i.score}</span></td><td>${favoriteButton(i.key)}</td>`;
   if(i.group==='新房') return `<tr data-project-key="${i.key}">${common}${tail}</tr>`;
   if(i.group==='次新') return `<tr data-project-key="${i.key}">${common}<td>${i.delivery}</td>${tail}</tr>`;
   return `<tr data-project-key="${i.key}">${common}${tail}</tr>`;
@@ -333,7 +407,7 @@ function openFloorPlan(key,trigger){
     floorPlanBody.innerHTML=`${figures}<div class="floorplan-source"><p><b>资料来源：</b><a href="${plan.source}" target="_blank" rel="noopener noreferrer">${plan.sourceLabel||'吉屋网公开楼盘资料'}</a></p><p><b>核对日期：</b>${plan.checkedAt}</p><p class="floorplan-verification${verificationClass}">${verification}</p></div>`;
     floorPlanBody.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.closest('figure').innerHTML='<div class="floorplan-empty"><strong>图片暂时无法加载</strong><p>可通过下方资料来源查看原始页面。</p></div>';}));
   }else{
-    floorPlanBody.innerHTML=`<div class="floorplan-empty"><strong>户型图待补充</strong><p>暂未找到与“${item.name}｜${item.unit}｜${item.layout}”完全一致且可核验的公开图片。</p><p>为避免误配相近面积或其他期数的户型图，此处暂不展示替代图片。</p></div>`;
+    floorPlanBody.innerHTML=`<div class="floorplan-empty"><strong>户型图待补充</strong><p>暂未找到与“${item.name}｜${item.unit}｜${item.layout}”完全一致且可核验的公开图片。</p><p>也未找到同项目内足够接近、格局可确认的真实户型图；为避免跨小区或错误格局误配，此处暂不展示。</p></div>`;
   }
   floorPlanReturnFocus=trigger;
   trigger.setAttribute('aria-expanded','true');
