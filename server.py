@@ -324,7 +324,7 @@ class HouseRequestHandler(SimpleHTTPRequestHandler):
                 except queue.Empty:
                     self.wfile.write(b": keepalive\n\n")
                     self.wfile.flush()
-        except (BrokenPipeError, ConnectionResetError, TimeoutError):
+        except (BrokenPipeError, ConnectionAbortedError, ConnectionResetError, TimeoutError):
             pass
         finally:
             self.house_server.favorite_events.unsubscribe(subscriber)
