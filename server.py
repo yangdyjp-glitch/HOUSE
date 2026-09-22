@@ -56,27 +56,48 @@ class FavoriteStore:
                     """
                     CREATE TABLE IF NOT EXISTS favorites (
                         house_id TEXT PRIMARY KEY,
+                        level INTEGER NOT NULL DEFAULT 2,
                         created_at TEXT NOT NULL
                     )
                     """
                 )
 
-    def list(self) -> list[dict[str, str]]:
+                columns = {
+                    row["name"]
+                    for row in connection.execute("PRAGMA table_info(favorites)").fetchall()
+                }
+                if "level" not in columns:
+                    connection.execute(
+                        "ALTER TABLE favorites ADD COLUMN level INTEGER NOT NULL DEFAULT 2"
+                    )
+
+    def list(self) -> list[dict[str, object]]:
         with closing(self._connect()) as connection:
             rows = connection.execute(
-                "SELECT house_id, created_at FROM favorites ORDER BY created_at DESC, house_id"
+                "SELECT house_id, level, created_at FROM favorites "
+                "ORDER BY level, created_at DESC, house_id"
             ).fetchall()
         return [
-            {"houseId": row["house_id"], "createdAt": row["created_at"]}
+            {
+                "houseId": row["house_id"],
+                "level": row["level"],
+                "createdAt": row["created_at"],
+            }
             for row in rows
         ]
 
-    def add(self, house_id: str) -> bool:
+    def add(self, house_id: str, level: int = 2) -> bool:
+        if level not in (1, 2, 3):
+            raise ValueError("Favorite level must be 1, 2, or 3")
         with self._write_lock, closing(self._connect()) as connection:
             with connection:
                 cursor = connection.execute(
-                    "INSERT OR IGNORE INTO favorites (house_id, created_at) VALUES (?, ?)",
-                    (house_id, utc_now()),
+                    """
+                    INSERT INTO favorites (house_id, level, created_at) VALUES (?, ?, ?)
+                    ON CONFLICT(house_id) DO UPDATE SET level = excluded.level
+                    WHERE favorites.level <> excluded.level
+                    """,
+                    (house_id, level, utc_now()),
                 )
         return cursor.rowcount > 0
 
@@ -86,7 +107,8 @@ class FavoriteStore:
             with connection:
                 for house_id in house_ids:
                     cursor = connection.execute(
-                        "INSERT OR IGNORE INTO favorites (house_id, created_at) VALUES (?, ?)",
+                        "INSERT OR IGNORE INTO favorites (house_id, level, created_at) "
+                        "VALUES (?, 2, ?)",
                         (house_id, utc_now()),
                     )
                     changed = cursor.rowcount > 0 or changed
@@ -196,7 +218,14 @@ class HouseRequestHandler(SimpleHTTPRequestHandler):
         house_id = self._favorite_id_from_path()
         if house_id is None:
             return
-        changed = self.house_server.store.add(house_id)
+        body = self._read_optional_json()
+        if body is None:
+            return
+        level = body.get("level", 2)
+        if isinstance(level, bool) or level not in (1, 2, 3):
+            self._send_error_json(HTTPStatus.BAD_REQUEST, "level must be 1, 2, or 3")
+            return
+        changed = self.house_server.store.add(house_id, level)
         payload = self.house_server.publish_favorites() if changed else self.house_server.favorite_payload()
         self._send_json(payload)
 
@@ -232,6 +261,27 @@ class HouseRequestHandler(SimpleHTTPRequestHandler):
         except ValueError:
             content_length = 0
         if content_length <= 0 or content_length > 16_384:
+            self._send_error_json(HTTPStatus.BAD_REQUEST, "Invalid request body")
+            return None
+        try:
+            body = json.loads(self.rfile.read(content_length))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            self._send_error_json(HTTPStatus.BAD_REQUEST, "Request body must be valid JSON")
+            return None
+        if not isinstance(body, dict):
+            self._send_error_json(HTTPStatus.BAD_REQUEST, "Request body must be a JSON object")
+            return None
+        return body
+
+    def _read_optional_json(self) -> dict[str, object] | None:
+        try:
+            content_length = int(self.headers.get("Content-Length", "0"))
+        except ValueError:
+            self._send_error_json(HTTPStatus.BAD_REQUEST, "Invalid request body")
+            return None
+        if content_length == 0:
+            return {}
+        if content_length < 0 or content_length > 16_384:
             self._send_error_json(HTTPStatus.BAD_REQUEST, "Invalid request body")
             return None
         try:
