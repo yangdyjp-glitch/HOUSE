@@ -1,0 +1,731 @@
+{
+  "version": "2026-09-24-location-audit-1",
+  "checkedAt": "2026-09-24",
+  "coordinatePolicy": "sourcePoint保留来源坐标；wgs84供OSM网站地图使用，gcj02供高德文档底图使用。转换由gcoord 1.0.7完成。未核实的点为null，不使用旧坐标回退。",
+  "properties": {
+    "project-0": {
+      "name": "高科紫薇时光云瀚",
+      "address": "西安市高新区创智路以西、纬三十六路以南",
+      "searchName": "西安 高科紫薇时光云瀚",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "OSM施工住宅用地轮廓中心；不是紫薇嘉境售楼处。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.13778605,
+        "lng": 108.80953405,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1557919797",
+        "https://xian.newhouse.fang.com/loupan/3610202380/housedetail.htm"
+      ],
+      "wgs84": {
+        "lat": 34.13778605,
+        "lng": 108.80953405
+      },
+      "gcj02": {
+        "lat": 34.13624427,
+        "lng": 108.81420636
+      }
+    },
+    "project-1": {
+      "name": "紫薇华发云峰里",
+      "address": "西安市高新区经二十二路与兴隆三路附近，紫薇华发云峰里",
+      "searchName": "西安 紫薇华发云峰里",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "小区轮廓中心；地图楼栋别名为紫薇云峰里。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.13354985,
+        "lng": 108.81607655,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1557988927",
+        "https://xa.fang.anjuke.com/loupan/512866.html"
+      ],
+      "wgs84": {
+        "lat": 34.13354985,
+        "lng": 108.81607655
+      },
+      "gcj02": {
+        "lat": 34.13199516,
+        "lng": 108.82073797
+      }
+    },
+    "project-2": {
+      "name": "华宇·御璟天宸",
+      "address": "西安市高新区西太路与三仁路附近，仁村站D口向东，华宇御璟天宸",
+      "searchName": "西安 华宇·御璟天宸",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "轮廓标签存在同音字误写，已与轮廓内华宇御璟天宸楼栋及仁村站地址交叉核对。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.15279355,
+        "lng": 108.8449618,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1235203117",
+        "https://www.fang.com/xinfang/xian-3610197330/"
+      ],
+      "wgs84": {
+        "lat": 34.15279355,
+        "lng": 108.8449618
+      },
+      "gcj02": {
+        "lat": 34.15119097,
+        "lng": 108.84957647
+      }
+    },
+    "project-3": {
+      "name": "金地西沣公元一期",
+      "address": "西安市雁塔区沈家桥一路，金地西沣公元一期东门",
+      "searchName": "西安 金地西沣公元一期",
+      "status": "entrance",
+      "statusLabel": "入口级定位",
+      "note": "一期东门定位，不代表所选房源楼栋。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.173393,
+        "lng": 108.897551,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0FFGXHG6B"
+      ],
+      "wgs84": {
+        "lat": 34.17504562,
+        "lng": 108.8929748
+      },
+      "gcj02": {
+        "lat": 34.173393,
+        "lng": 108.897551
+      }
+    },
+    "project-4": {
+      "name": "融创西安宸院二期",
+      "address": "西安市长安区沣经四路与樱花二路附近，融创西安宸院",
+      "searchName": "西安 融创西安宸院二期",
+      "status": "phase_pending",
+      "statusLabel": "小区已定位，期数待核",
+      "note": "仅核实到融创西安宸院整体社区，二期边界和具体楼栋待核。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.1694577,
+        "lng": 108.8796932,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1015487358",
+        "https://m.fang.com/xiaoqu/xian-3610203834.html"
+      ],
+      "wgs84": {
+        "lat": 34.1694577,
+        "lng": 108.8796932
+      },
+      "gcj02": {
+        "lat": 34.16781176,
+        "lng": 108.88427113
+      }
+    },
+    "project-5": {
+      "name": "中海昆明路九号",
+      "address": "西安市沣东新城沣明路1991号，中海昆明路九号",
+      "searchName": "西安 中海昆明路九号",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "采用住宅小区轮廓，不采用北侧城屿墅地块。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.2561952,
+        "lng": 108.8155226,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/999822404",
+        "https://m.fang.com/xiaoqu/strategy/xian/3610190020.html"
+      ],
+      "wgs84": {
+        "lat": 34.2561952,
+        "lng": 108.8155226
+      },
+      "gcj02": {
+        "lat": 34.25468259,
+        "lng": 108.82019486
+      }
+    },
+    "project-6": {
+      "name": "天地源云水天境",
+      "address": "西安市雁塔区鱼斗路294号，天地源云水天境",
+      "searchName": "西安 天地源云水天境",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "高德小区POI；原网站高新三期点位错误。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.218319,
+        "lng": 108.830746,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0GKNZ8NEB",
+        "https://www.fang.com/xiaoqu/xian-3610192534/"
+      ],
+      "wgs84": {
+        "lat": 34.21986486,
+        "lng": 108.82609455
+      },
+      "gcj02": {
+        "lat": 34.218319,
+        "lng": 108.830746
+      }
+    },
+    "project-7": {
+      "name": "华润二十四城四期",
+      "address": "西安市沣东新城沣润东路，华润二十四城四期",
+      "searchName": "西安 华润二十四城四期",
+      "status": "building_reference",
+      "statusLabel": "期内楼栋参考点",
+      "note": "采用明确标有四期的36号楼作期内参考点；所选121平方米房源楼栋未确认。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.29089385,
+        "lng": 108.81959795,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1020491331"
+      ],
+      "wgs84": {
+        "lat": 34.29089385,
+        "lng": 108.81959795
+      },
+      "gcj02": {
+        "lat": 34.28938805,
+        "lng": 108.82426622
+      }
+    },
+    "project-8": {
+      "name": "紫薇西棠",
+      "address": "西安市雁塔区富源二路与富鱼路交汇处西北角，紫薇西棠",
+      "searchName": "西安 紫薇西棠",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "高德项目POI与OSM小区范围交叉核对；南北区及117平方米户型楼栋仍需确认。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.241958,
+        "lng": 108.829559,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0FFHCWPH4",
+        "https://www.openstreetmap.org/way/997653242"
+      ],
+      "wgs84": {
+        "lat": 34.24349292,
+        "lng": 108.8249036
+      },
+      "gcj02": {
+        "lat": 34.241958,
+        "lng": 108.829559
+      }
+    },
+    "project-9": {
+      "name": "紫薇田园都市D区",
+      "address": "西安市高新区博士路一带，紫薇田园都市D区香格里拉",
+      "searchName": "西安 紫薇田园都市D区",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "已区分D区与紫薇田园都市其他组团。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.17850195,
+        "lng": 108.8677942,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/246285611"
+      ],
+      "wgs84": {
+        "lat": 34.17850195,
+        "lng": 108.8677942
+      },
+      "gcj02": {
+        "lat": 34.17687181,
+        "lng": 108.87238142
+      }
+    },
+    "project-10": {
+      "name": "华润二十四城三期",
+      "address": "西安市沣东新城三桥新街，华润二十四城西区三期",
+      "searchName": "西安 华润二十四城三期",
+      "status": "phase_pending",
+      "statusLabel": "小区已定位，期数待核",
+      "note": "仅核实到华润二十四城整体范围，三期楼栋和边界待核。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.2926069,
+        "lng": 108.81860755,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1019950030",
+        "https://maps.apple.com/place?auid=1118368625812768&lsp=57879"
+      ],
+      "wgs84": {
+        "lat": 34.2926069,
+        "lng": 108.81860755
+      },
+      "gcj02": {
+        "lat": 34.29110367,
+        "lng": 108.82327763
+      }
+    },
+    "project-11": {
+      "name": "和平春天",
+      "address": "西安市沣东新城和平工业园区四号路附近，和平春天",
+      "searchName": "西安 和平春天",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "OSM轮廓与安居客小区地图中心交叉核对。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.25753945,
+        "lng": 108.818599,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/999822386",
+        "https://m.anjuke.com/xa/community/830519/"
+      ],
+      "wgs84": {
+        "lat": 34.25753945,
+        "lng": 108.818599
+      },
+      "gcj02": {
+        "lat": 34.25602173,
+        "lng": 108.82326625
+      }
+    },
+    "project-12": {
+      "name": "紫薇田园都市非高溢价组团",
+      "address": "西安市高新区紫薇田园都市，具体组团未指定",
+      "searchName": "西安 紫薇田园都市非高溢价组团",
+      "status": "ambiguous",
+      "statusLabel": "组团未指定，无法定位",
+      "note": "“非高溢价组团”不是正式小区或期数名称，不能给出唯一定位。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": null,
+      "sources": [
+        "https://www.amap.com/place/B001D14XF9"
+      ],
+      "wgs84": null,
+      "gcj02": null
+    },
+    "project-13": {
+      "name": "南飞鸿玖玺大观",
+      "address": "西安市雁塔区大寨路与石驿路附近，南飞鸿玖玺大观",
+      "searchName": "西安 南飞鸿玖玺大观",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "小区轮廓中心。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.24543185,
+        "lng": 108.8455967,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/997643558",
+        "https://xian.esf.fang.com/loupan/3610192512/housedetail.htm"
+      ],
+      "wgs84": {
+        "lat": 34.24543185,
+        "lng": 108.8455967
+      },
+      "gcj02": {
+        "lat": 34.24385946,
+        "lng": 108.85021783
+      }
+    },
+    "project-14": {
+      "name": "德通·昆仑序",
+      "address": "西安市雁塔区丈八北路与科技路板块，德通昆仑序",
+      "searchName": "西安 德通·昆仑序",
+      "status": "unresolved",
+      "statusLabel": "地址已核，定位待核",
+      "note": "公开地址包含营销中心口径；未取得可独立复核的项目地块坐标，撤下旧路口估算点。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": null,
+      "sources": [
+        "https://house.leju.com/sx/190364/"
+      ],
+      "wgs84": null,
+      "gcj02": null
+    },
+    "project-15": {
+      "name": "居礼TOO",
+      "address": "西安市莲湖区丰镐东路366号，居礼TOO",
+      "searchName": "西安 居礼TOO",
+      "status": "unresolved",
+      "statusLabel": "地址已核，定位待核",
+      "note": "地址已核对，未取得可靠项目坐标；不得用同名居礼小区或周边路口代替。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": null,
+      "sources": [
+        "https://xian.esf.fang.com/loupan/3610199334.htm"
+      ],
+      "wgs84": null,
+      "gcj02": null
+    },
+    "project-16": {
+      "name": "兴庆御苑",
+      "address": "西安市碑林区咸宁西路与兴庆西路十字西北角，兴庆御苑",
+      "searchName": "西安 兴庆御苑",
+      "status": "unresolved",
+      "statusLabel": "地址已核，定位待核",
+      "note": "地址已核对，尚未取得可独立复核的项目地块坐标。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": null,
+      "sources": [
+        "https://xa.fang.anjuke.com/loupan/491446.html"
+      ],
+      "wgs84": null,
+      "gcj02": null
+    },
+    "project-17": {
+      "name": "拉克雷公馆",
+      "address": "西安市雁塔区吉祥路30号，秦地拉克雷公馆",
+      "searchName": "西安 拉克雷公馆",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "高德小区POI；原网站太白南路南段点位错误。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.22171,
+        "lng": 108.928363,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0FFH0LPTI"
+      ],
+      "traffic": "吉祥路、吉祥村站片区；具体通勤路线待实测",
+      "wgs84": {
+        "lat": 34.22333704,
+        "lng": 108.92375288
+      },
+      "gcj02": {
+        "lat": 34.22171,
+        "lng": 108.928363
+      }
+    },
+    "project-18": {
+      "name": "蓝光公园华府二期",
+      "address": "西安市沣东新城天台路与征和四路一带，蓝光公园华府",
+      "searchName": "西安 蓝光公园华府二期",
+      "status": "phase_pending",
+      "statusLabel": "小区已定位，期数待核",
+      "note": "仅核实到蓝光公园华府整体社区，二期地块和房源楼栋待核。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.2847898,
+        "lng": 108.81207545,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1019931429"
+      ],
+      "wgs84": {
+        "lat": 34.2847898,
+        "lng": 108.81207545
+      },
+      "gcj02": {
+        "lat": 34.28329508,
+        "lng": 108.81675564
+      }
+    },
+    "project-19": {
+      "name": "东方米兰",
+      "address": "西安市雁塔区大寨路2号，东方米兰",
+      "searchName": "西安 东方米兰",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "与东方米兰国际城不是同一小区；以大寨路2号项目为准。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.244109,
+        "lng": 108.879601,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B001D09KRE",
+        "https://www.openstreetmap.org/way/973382183"
+      ],
+      "wgs84": {
+        "lat": 34.24572406,
+        "lng": 108.87501428
+      },
+      "gcj02": {
+        "lat": 34.244109,
+        "lng": 108.879601
+      }
+    },
+    "project-20": {
+      "name": "南飞鸿十年城",
+      "address": "西安市雁塔区科技二路西段与西三环交汇东南角，南飞鸿十年城（鸿锦城十年城）",
+      "searchName": "西安 南飞鸿十年城",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "采用鸿锦城十年城住宅轮廓；原文档路口估算点已弃用。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.22533895,
+        "lng": 108.84102725,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/997516777",
+        "https://xa.loupan.com/loupan/7020804.html"
+      ],
+      "wgs84": {
+        "lat": 34.22533895,
+        "lng": 108.84102725
+      },
+      "gcj02": {
+        "lat": 34.22376727,
+        "lng": 108.84565402
+      }
+    },
+    "project-21": {
+      "name": "真爱万科公园华府",
+      "address": "西安市雁塔区公园南路与雁曲四路交汇处东南角，真爱万科公园华府",
+      "searchName": "西安 真爱万科公园华府",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "实际在公园南路片区，原“曲江西部/城南近城”描述错误，超出兴庆路以西的原筛选偏好。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.227363,
+        "lng": 109.016125,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0FFI6JYPF"
+      ],
+      "region": "曲江东部",
+      "traffic": "公园南路片区；前往李家村的路线和耗时需重新核实",
+      "wgs84": {
+        "lat": 34.22877838,
+        "lng": 109.01120602
+      },
+      "gcj02": {
+        "lat": 34.227363,
+        "lng": 109.016125
+      }
+    },
+    "project-22": {
+      "name": "中海凯旋门",
+      "address": "西安市雁塔区春临三路与公田一路交汇处东南角，中海凯旋门",
+      "searchName": "西安 中海凯旋门",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "高德小区POI。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.182142,
+        "lng": 108.97956,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B0FFF6XR0U"
+      ],
+      "wgs84": {
+        "lat": 34.18368111,
+        "lng": 108.97479863
+      },
+      "gcj02": {
+        "lat": 34.182142,
+        "lng": 108.97956
+      }
+    },
+    "project-23": {
+      "name": "华府西城港湾",
+      "address": "西安市莲湖区华府西城港湾二期",
+      "searchName": "西安 华府西城港湾",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "按当前房型“二期21#”匹配二期轮廓；不再沿用一期大庆路881号的入口点。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.27336365,
+        "lng": 108.8613199,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/970380772"
+      ],
+      "wgs84": {
+        "lat": 34.27336365,
+        "lng": 108.8613199
+      },
+      "gcj02": {
+        "lat": 34.27177684,
+        "lng": 108.8659216
+      }
+    },
+    "project-24": {
+      "name": "高新第五季",
+      "address": "西安市雁塔区西沣路与锦业二路十字东北角，高新第五季",
+      "searchName": "西安 高新第五季",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "OSM小区轮廓中心。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.18560455,
+        "lng": 108.8851643,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/986830642",
+        "https://xa.jiwu.com/detail/188484.html"
+      ],
+      "wgs84": {
+        "lat": 34.18560455,
+        "lng": 108.8851643
+      },
+      "gcj02": {
+        "lat": 34.18395944,
+        "lng": 108.88974161
+      }
+    },
+    "project-25": {
+      "name": "金辉天鹅湾",
+      "address": "西安市莲湖区星火路87号，金辉天鹅湾",
+      "searchName": "西安 金辉天鹅湾",
+      "status": "unresolved",
+      "statusLabel": "地址已核，定位待核",
+      "note": "已确认位于红庙坡而非昆明路；尚无可独立复核坐标，原文档大兴东路37号/金辉C园点位不可当作本项目。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": null,
+      "sources": [
+        "https://ybj.shaanxi.gov.cn/zfxxgk/fdzdgknr/tzgg/202210/P020240724602796256794.pdf"
+      ],
+      "region": "城西北",
+      "traffic": "莲湖区红庙坡片区；前往高新和李家村的路线需重新核实",
+      "wgs84": null,
+      "gcj02": null
+    },
+    "project-26": {
+      "name": "万科高新华府",
+      "address": "西安市雁塔区西沣路与西沣三路附近，万科高新华府",
+      "searchName": "西安 万科高新华府",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "OSM小区轮廓中心；不是西沣路与雁环路路口。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.18218665,
+        "lng": 108.88418435,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/986830628",
+        "https://xian.esf.fang.com/loupan/3611171412.htm"
+      ],
+      "wgs84": {
+        "lat": 34.18218665,
+        "lng": 108.88418435
+      },
+      "gcj02": {
+        "lat": 34.18054113,
+        "lng": 108.88876163
+      }
+    },
+    "project-27": {
+      "name": "中铁缤纷南郡",
+      "address": "西安市雁塔区丈八四路6号，中铁缤纷南郡",
+      "searchName": "西安 中铁缤纷南郡",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "按小区完整轮廓重新取中心，替换文档旧点。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.2047662,
+        "lng": 108.86180905,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/255897982",
+        "https://m.fang.com/xiaoqu/strategy/xian/3610681778.html"
+      ],
+      "wgs84": {
+        "lat": 34.2047662,
+        "lng": 108.86180905
+      },
+      "gcj02": {
+        "lat": 34.20315289,
+        "lng": 108.86640468
+      }
+    },
+    "project-28": {
+      "name": "龙湖花千树",
+      "address": "西安市航天基地神舟四路与航创路一带，龙湖花千树",
+      "searchName": "西安 龙湖花千树",
+      "status": "phase_pending",
+      "statusLabel": "小区已定位，期数待核",
+      "note": "确认在航天基地，不是大学城；当前户型未指定一期或二期，采用同名项目参考点。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.151149,
+        "lng": 108.97700045,
+        "crs": "WGS84"
+      },
+      "sources": [
+        "https://www.openstreetmap.org/way/1006713311",
+        "https://xian.esf.fang.com/loupan/3611128508/housedetail.htm"
+      ],
+      "region": "航天基地",
+      "traffic": "航天基地神舟四路、航创路片区；通勤路线需重新核实",
+      "wgs84": {
+        "lat": 34.151149,
+        "lng": 108.97700045
+      },
+      "gcj02": {
+        "lat": 34.14960604,
+        "lng": 108.98176805
+      }
+    },
+    "project-29": {
+      "name": "万家灯火",
+      "address": "西安市雁塔区丈八六路2号，万家灯火",
+      "searchName": "西安 万家灯火",
+      "status": "community",
+      "statusLabel": "小区级定位",
+      "note": "高德小区POI与盛泽万家灯火轮廓交叉核对。",
+      "checkedAt": "2026-09-24",
+      "sourcePoint": {
+        "lat": 34.203416,
+        "lng": 108.855898,
+        "crs": "GCJ02"
+      },
+      "sources": [
+        "https://www.amap.com/place/B001D0WC5A",
+        "https://www.openstreetmap.org/way/254337659"
+      ],
+      "wgs84": {
+        "lat": 34.2050128,
+        "lng": 108.85128865
+      },
+      "gcj02": {
+        "lat": 34.203416,
+        "lng": 108.855898
+      }
+    }
+  }
+}

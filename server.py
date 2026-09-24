@@ -239,7 +239,7 @@ class HouseRequestHandler(SimpleHTTPRequestHandler):
 
     def end_headers(self) -> None:
         path = urlparse(self.path).path
-        if path == "/" or path.endswith(".html"):
+        if path == "/" or path.endswith(".html") or path in ("/assets/property-locations.js", "/assets/property-locations.json"):
             self.send_header("Cache-Control", "no-cache")
         super().end_headers()
 
